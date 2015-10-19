@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1978216691	test_440_stop			\Default Work Unit\test_440_stop	
+	2805646105	test_440_start			\Default Work Unit\test_440_start	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	493488930	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\SFX\Test\Test_440\Wwise Sine	
+

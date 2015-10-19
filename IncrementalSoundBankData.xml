@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="4" Flags="878078161">
+	<Platform GUID="{3B7F2C22-2924-473D-A5EB-5DFA8D8B0F35}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="3583624583" StreamHash="157587662" Timestamp="130897551420000000"/>
+			<Bank Name="Sfx" Hash="3628734203" StreamHash="157587662" Timestamp="130897551420000000"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{04CCF948-6413-4B19-8284-86027A6BF2FE}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="2184649756" StreamHash="157587662" Timestamp="130897551420000000"/>
+			<Bank Name="Sfx" Hash="3628734203" StreamHash="157587662" Timestamp="130897551420000000"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{179928A8-3B77-4DC1-AEAB-66308D6A9568}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="792687883" StreamHash="157587662" Timestamp="130897551410000000"/>
+			<Bank Name="Sfx" Hash="3628734203" StreamHash="157587662" Timestamp="130897551410000000"/>
+		</Language>
+	</Platform>
+	<Platform GUID="{4006B9EB-A946-4A18-8119-40E59330F88D}">
+		<Language ID="0">
+			<Bank Name="Init" Hash="2525231382" StreamHash="157587662" Timestamp="130897551420000000"/>
+			<Bank Name="Sfx" Hash="3628734203" StreamHash="157587662" Timestamp="130897551420000000"/>
+		</Language>
+	</Platform>
+</IncrementalBankBuild>

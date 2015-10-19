@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>/Users/tallpockets/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/WwiseProjects/TheBridge/</ProjectRoot>
+		<SourceFilesRoot>/Users/tallpockets/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/WwiseProjects/TheBridge/.cache/Android/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/tallpockets/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/WwiseProjects/TheBridge/GeneratedSoundBanks/Android/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/tallpockets/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/WwiseProjects/TheBridge/GeneratedSoundBanks/Android/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX">
+			<ShortName>Sfx</ShortName>
+			<Path>Sfx.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2805646105" Name="test_440_start"/>
+				<Event Id="1978216691" Name="test_440_stop" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

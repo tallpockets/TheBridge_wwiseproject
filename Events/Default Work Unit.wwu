@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}" SchemaVersion="70">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="test_440_start" ID="{740AD416-24BB-4DD4-9BC7-2FBFDEA1B323}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3971459C-2E69-4B6B-8A91-6050C9B4D308}" ShortID="198717603" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5B12F58D-587A-452F-B5A2-DEA063789921}" Global="false">
+									<ObjectRef Name="Test_440" ID="{2FB4B704-E393-480F-B0A5-03320385EDD2}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="test_440_stop" ID="{63436571-8F7F-47B1-BEFB-FD67E47D86E2}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{60983B74-F98B-4199-9F3A-24B83FD5A069}" ShortID="1073627669" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CDD78569-DDF6-4EFC-84B8-91B48AE5C3FF}" Global="false">
+									<ObjectRef Name="Test_440" ID="{2FB4B704-E393-480F-B0A5-03320385EDD2}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
