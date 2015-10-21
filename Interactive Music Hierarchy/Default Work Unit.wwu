@@ -1,6 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B7057726-A09A-46D4-83FE-BADA94BDB3E3}" SchemaVersion="70">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{B7057726-A09A-46D4-83FE-BADA94BDB3E3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B7057726-A09A-46D4-83FE-BADA94BDB3E3}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="BridgeAmbient" ID="{265A7EE6-E52E-46DA-BD74-ACB59C5AF798}" ShortID="717768448">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{848E9EB2-1F4F-48CA-B4F6-D3FDD82986C9}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="BridgeAmbient" ID="{E57A6257-69BD-4F92-BCFC-9CD0A36BE3D3}" ShortID="94458005">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="203500"/>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="BridgeAmbient" ID="{2B7F53B5-90FA-4E6A-9D18-AA9FA843A5C2}" ShortID="958794507">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="BridgeAmbient" ID="{0C5CFEDF-3FD3-49FA-8EAB-CAC021167DCA}" ShortID="404952390">
+											<Language>SFX</Language>
+											<AudioFile>BridgeAmbient.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{C697CB9E-B968-4B79-AEED-CDAEDE35108A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{E33E80FB-271F-43C5-A3F0-3AF86137756D}">
+											<ClipList>
+												<MusicClip Name="BridgeAmbient" ID="{2868EB95-8C00-4E8F-8AF6-9785EBB125EB}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="203500"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="BridgeAmbient" ID="{0C5CFEDF-3FD3-49FA-8EAB-CAC021167DCA}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{1AB0DC31-B861-49F6-8839-D6166CCA143D}"/>
+								<MusicCue Name="Exit Cue" ID="{1C9F41F5-D431-4BDB-91D1-0A139DD3A475}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="203500"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{4CB93357-A6B8-4AB1-A913-1265082F3F45}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{E8EC9C6B-6B43-4FB4-B5CA-F3E4377CE064}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{B6FDDFDE-7852-436B-B650-BB25825D610F}" ShortID="445672079">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{4DB14B7A-7C47-4C7A-AE5D-7346DE99C9DC}" ShortID="712460278">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="BridgeAmbient" ID="{E57A6257-69BD-4F92-BCFC-9CD0A36BE3D3}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

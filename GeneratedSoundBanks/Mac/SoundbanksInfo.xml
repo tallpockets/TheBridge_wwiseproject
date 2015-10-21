@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="10" SoundbankVersion="113">
 	<RootPaths>
-		<ProjectRoot>/Users/tallpockets/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/WwiseProjects/TheBridge/</ProjectRoot>
-		<SourceFilesRoot>/Users/tallpockets/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/WwiseProjects/TheBridge/.cache/Mac/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/tallpockets/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/WwiseProjects/TheBridge/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ProjectRoot>/Users/kentjolly/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/wwise_projects/TheBridge_wwiseproject/</ProjectRoot>
+		<SourceFilesRoot>/Users/kentjolly/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/wwise_projects/TheBridge_wwiseproject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/kentjolly/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/wwise_projects/TheBridge_wwiseproject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/tallpockets/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/WwiseProjects/TheBridge/GeneratedSoundBanks/Mac/</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/kentjolly/Library/Application Support/Wwise/Bottles/wwise/dosdevices/y:/Documents/wwise_projects/TheBridge_wwiseproject/GeneratedSoundBanks/Mac/</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -15,9 +15,17 @@
 			<ShortName>Sfx</ShortName>
 			<Path>Sfx.bnk</Path>
 			<IncludedEvents>
+				<Event Id="575990635" Name="sun_loop_play" MaxAttenuation="100.000000"/>
+				<Event Id="3735197697" Name="sun_loop_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2805646105" Name="test_440_start"/>
 				<Event Id="1978216691" Name="test_440_stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="942456439" Language="SFX">
+					<ShortName>space_mainline_lp.wav</ShortName>
+					<Path>SFX/space_mainline_lp_A65A97ED.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ShortName>Init</ShortName>

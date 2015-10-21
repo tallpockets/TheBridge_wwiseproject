@@ -1,7 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	575990635	sun_loop_play			\Default Work Unit\sun_loop_play	
 	1978216691	test_440_stop			\Default Work Unit\test_440_stop	
 	2805646105	test_440_start			\Default Work Unit\test_440_start	
+	3735197697	sun_loop_stop			\Default Work Unit\sun_loop_stop	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	493488930	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\SFX\Test\Test_440\Wwise Sine	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	942456439	space_mainline_lp	Y:\Documents\wwise_projects\TheBridge_wwiseproject\.cache\Android\SFX\space_mainline_lp_A65A97ED.wem		\Actor-Mixer Hierarchy\SFX\Test\space_mainline_lp		73655
 

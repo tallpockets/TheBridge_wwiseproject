@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}" SchemaVersion="70">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Settings" ID="{4053704C-4393-44DD-A5DB-CAC57E43B9A1}" ShortID="615712274">
+					<ChildrenList>
+						<GameParameter Name="MasterVolume" ID="{F855F550-B15E-4FEE-983A-C2C42E90C4CB}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="MusicVolume" ID="{253C1C84-7A82-4B1A-BD1C-A556C2777566}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SfxVolume" ID="{09CCF50C-6E7B-4545-94BF-572FBDCD8B79}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<GameParameter Name="ThrustPower" ID="{ABD376DF-0518-4B72-A94C-F1E41961EBB7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ShipPitch" ID="{44720D2B-08FA-4351-934D-68140C99A95C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1.5"/>
+						<Property Name="Min" Type="Real64" Value="-1.5"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ShipYaw" ID="{11D5C78A-6AAE-4CF4-9B0A-8A767298E8FE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1.5"/>
+						<Property Name="Min" Type="Real64" Value="-1.5"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
