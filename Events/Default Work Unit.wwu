@@ -132,58 +132,101 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="RocketRumbleLp_Play" ID="{B49AE8CE-3060-4612-85A9-F58E9AD053D2}">
+				<Folder Name="ShipComponents" ID="{58FAAB94-7F26-4C4A-9508-914D58B4937C}" ShortID="366547434">
 					<ChildrenList>
-						<Action Name="Play" ID="{7A6E5FE6-6EA8-4EAF-9263-7A85530D1090}" ShortID="1050938863" Type="Play" Scope="One" Global="false">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ElementList>
-								<Element ID="{4BCB8442-3DE4-4548-B47A-1E78CE40F190}" Global="false">
-									<ObjectRef Name="RocketRumbleLp" ID="{8DBF4669-AE11-4FA6-B7A5-188B3211479C}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
-								</Element>
-							</ElementList>
-						</Action>
+						<Event Name="RocketRumbleLp_Play" ID="{B49AE8CE-3060-4612-85A9-F58E9AD053D2}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7A6E5FE6-6EA8-4EAF-9263-7A85530D1090}" ShortID="1050938863" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{4BCB8442-3DE4-4548-B47A-1E78CE40F190}" Global="false">
+											<ObjectRef Name="RocketRumbleLp" ID="{8DBF4669-AE11-4FA6-B7A5-188B3211479C}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EngineThump_Play" ID="{1F1E65C5-C839-44FA-9BAD-A93D437DA8A1}">
+							<ChildrenList>
+								<Action Name="Play" ID="{FA07FA59-FEFE-43FF-B820-863604A3CFDD}" ShortID="538625277" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{109A2459-18BC-4926-9AFD-B8F2FEEFC159}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{E6D07144-6C08-4D13-9305-C11A8571C9A5}" Global="false">
+											<ObjectRef Name="EngineBeatSingles" ID="{19B282F5-E3CA-4B41-8D90-95699FAE4F72}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="RocketRumbleLp_Stop" ID="{C497AA50-0C3B-414E-A7A9-DF6C12F26E96}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{C13CDD54-3FCA-46E6-81E0-08916BEA0CCA}" ShortID="225019355" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{FBED2FCD-5DA2-415B-A151-63E13EF21AB9}" Global="false">
+											<ObjectRef Name="RocketRumbleLp" ID="{8DBF4669-AE11-4FA6-B7A5-188B3211479C}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Reactor_Start" ID="{B02882F2-094A-4AFD-B247-CEBC4721FCB0}">
+							<ChildrenList>
+								<Action Name="Play" ID="{46689287-8DFF-444E-B198-5EB54B780FD0}" ShortID="903607304" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{47826443-11AE-45CF-9A44-D2812B060C99}" Global="false">
+											<ObjectRef Name="sfx_zelem_teleporter_powerup1" ID="{BF1CFD97-72FA-4139-AA32-EF7CD3580FE5}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{EED52D67-6568-4520-91F1-E70B7C867192}" ShortID="43867422" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{06BA85F8-3DF3-4ABA-98B9-09E5C7052A59}" Global="false">
+											<ObjectRef Name="Reactor" ID="{9019922D-7EE1-4A8E-8608-F02C347B1C95}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Reactor_Stop" ID="{A99C0268-9821-48BE-ADD1-24EBFDBFF0B3}">
+							<ChildrenList>
+								<Action Name="Play" ID="{FBC8BDB3-E479-4499-B997-08EFFEA2B385}" ShortID="298561214" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{7FB954DD-C3A1-40CE-9582-FA411F1C5D8D}" Global="false">
+											<ObjectRef Name="sfx_zelem_teleporter_powerdown1" ID="{5BBCE75C-EB7D-4C33-A4DB-77AC215B260C}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{2A82E628-161F-4EB7-9C02-34A51DB18D8F}" ShortID="588921048" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{1AAD8EA0-071D-4408-A954-8DC976E08090}" Global="false">
+											<ObjectRef Name="Reactor" ID="{9019922D-7EE1-4A8E-8608-F02C347B1C95}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="RocketRumbleLp_Stop" ID="{C497AA50-0C3B-414E-A7A9-DF6C12F26E96}">
-					<ChildrenList>
-						<Action Name="Stop" ID="{C13CDD54-3FCA-46E6-81E0-08916BEA0CCA}" ShortID="225019355" Type="Stop" Scope="One" Global="false">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ElementList>
-								<Element ID="{FBED2FCD-5DA2-415B-A151-63E13EF21AB9}" Global="false">
-									<ObjectRef Name="RocketRumbleLp" ID="{8DBF4669-AE11-4FA6-B7A5-188B3211479C}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="EngineThump_Play" ID="{1F1E65C5-C839-44FA-9BAD-A93D437DA8A1}">
-					<ChildrenList>
-						<Action Name="Play" ID="{FA07FA59-FEFE-43FF-B820-863604A3CFDD}" ShortID="538625277" Type="Play" Scope="One" Global="false">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{109A2459-18BC-4926-9AFD-B8F2FEEFC159}">
-												<PropertyList>
-													<Property Name="Max" Type="Real64" Value="10"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ElementList>
-								<Element ID="{E6D07144-6C08-4D13-9305-C11A8571C9A5}" Global="false">
-									<ObjectRef Name="EngineBeatSingles" ID="{19B282F5-E3CA-4B41-8D90-95699FAE4F72}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -4,6 +4,28 @@
 		<WorkUnit Name="Default Work Unit" ID="{3332F026-A117-4838-A039-F21ECAB0D8CC}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="New Soundcaster Session" ID="{F5AC0C8B-5796-4BB6-A934-F7A842A1BC40}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Reactor_Start" ID="{B02882F2-094A-4AFD-B247-CEBC4721FCB0}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RocketRumbleLp_Play" ID="{B49AE8CE-3060-4612-85A9-F58E9AD053D2}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Reactor_Stop" ID="{A99C0268-9821-48BE-ADD1-24EBFDBFF0B3}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RocketRumbleLp_Stop" ID="{C497AA50-0C3B-414E-A7A9-DF6C12F26E96}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BridgeAmbient_Play" ID="{53AE074E-1E78-4A30-864D-E264F9C42825}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="SfxVolume" ID="{09CCF50C-6E7B-4545-94BF-572FBDCD8B79}"/>
@@ -11,6 +33,10 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipPitch" ID="{44720D2B-08FA-4351-934D-68140C99A95C}"/>
+							<Value>7.33093419541692E-317</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ReactorPowerPercentage" ID="{A59CD535-1DF3-43A4-B41A-4DC15A5E82DF}"/>
 							<Value>7.33093419541692E-317</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -27,7 +53,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ThrustPower" ID="{ABD376DF-0518-4B72-A94C-F1E41961EBB7}"/>
-							<Value>78.3261802575107</Value>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

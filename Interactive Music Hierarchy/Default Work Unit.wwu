@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{B7057726-A09A-46D4-83FE-BADA94BDB3E3}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicPlaylistContainer Name="BridgeAmbient" ID="{265A7EE6-E52E-46DA-BD74-ACB59C5AF798}" ShortID="717768448">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
