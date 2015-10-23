@@ -151,6 +151,9 @@
 						<Event Name="EngineThump_Play" ID="{1F1E65C5-C839-44FA-9BAD-A93D437DA8A1}">
 							<ChildrenList>
 								<Action Name="Play" ID="{FA07FA59-FEFE-43FF-B820-863604A3CFDD}" ShortID="538625277" Type="Play" Scope="One" Global="false">
+									<ExcludedPlatformList>
+										<Platform>Mac</Platform>
+									</ExcludedPlatformList>
 									<PropertyList>
 										<Property Name="Delay" Type="Real64">
 											<ModifierList>
@@ -167,6 +170,13 @@
 									<ElementList>
 										<Element ID="{E6D07144-6C08-4D13-9305-C11A8571C9A5}" Global="false">
 											<ObjectRef Name="EngineBeatSingles" ID="{19B282F5-E3CA-4B41-8D90-95699FAE4F72}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{9DFD8B9E-9E4F-4568-B5D8-DF5338973B90}" ShortID="666095454" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{F660D662-1E2E-437B-9918-0CF25B073415}" Global="false">
+											<ObjectRef Name="EngineBeatBlend" ID="{7A0BB99D-D4B3-446F-AAAA-080E7C10E0C4}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -220,6 +230,99 @@
 									<ElementList>
 										<Element ID="{1AAD8EA0-071D-4408-A954-8DC976E08090}" Global="false">
 											<ObjectRef Name="Reactor" ID="{9019922D-7EE1-4A8E-8608-F02C347B1C95}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="RocketMotorAmbient_Start" ID="{70CBF2C9-F08C-45EF-B82C-4708E126B231}">
+							<ChildrenList>
+								<Action Name="Set Voice Pitch" ID="{DD06552B-FCB5-4960-84D5-A659F3884692}" ShortID="472013738" Type="ChangePitch" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32" Value="-610"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{F6FB9261-DD22-414C-BAD4-1E037EE2B3F5}" Global="false">
+											<ObjectRef Name="RocketMotorNoise" ID="{63189C4C-0FB5-419A-AE25-580B904843CA}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{F6FF1140-8F81-4CB5-A7A7-1A92D4EE063D}" ShortID="489400320" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{DBEA7556-50C6-4424-98B3-36512A44A7C2}" Global="false">
+											<ObjectRef Name="RocketMotorNoise" ID="{63189C4C-0FB5-419A-AE25-580B904843CA}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Set Voice Pitch" ID="{5772B643-9E64-4C3F-B1EB-102FA8472F29}" ShortID="398655645" Type="ChangePitch" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{94FD9AEC-A71D-4C48-AF66-95566A255987}" Global="false">
+											<ObjectRef Name="RocketMotorNoise" ID="{63189C4C-0FB5-419A-AE25-580B904843CA}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="RocketMotorAmbient_Stop" ID="{F9D3821D-1618-4506-A2D6-53D4F0C3729C}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{AEC85A41-FA69-401A-9AC9-9A7DB55D2C72}" ShortID="156780266" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{811A3F47-2C41-402D-BF08-E1E6D4BFC9B9}" Global="false">
+											<ObjectRef Name="RocketMotorNoise" ID="{63189C4C-0FB5-419A-AE25-580B904843CA}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Set Voice Pitch" ID="{CFD2DF3F-CBCF-4DB7-80BD-BDC31F1123F2}" ShortID="133611090" Type="ChangePitch" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Pitch" Type="int32" Value="-2400"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{B0BF8FC0-A809-46E5-A498-CFDA07BDA230}" Global="false">
+											<ObjectRef Name="RocketMotorNoise" ID="{63189C4C-0FB5-419A-AE25-580B904843CA}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FuelTankClose_Play" ID="{1C1F16F2-F31E-4A8D-A344-865B2959C72B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7E1DE93E-44DD-4409-99B2-705B5021198C}" ShortID="885963254" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{108CE59B-4E04-491E-8A7D-37F22E0CDAD3}" Global="false">
+											<ObjectRef Name="FuelTankClose" ID="{53EE8918-FB19-418C-BD03-8E5BAE845ADB}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FuelTankOpen_Play" ID="{B4A84CA9-E75A-4792-AF9D-C43395E18CAC}">
+							<ChildrenList>
+								<Action Name="Play" ID="{035BF6ED-C7B3-4030-B89D-BA9D0E3DB058}" ShortID="488410493" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{8C3C30D9-749C-4368-82CD-7D0367235F3B}" Global="false">
+											<ObjectRef Name="FuelTankOpen" ID="{DC643ABB-F8F0-4DB9-ADC3-D33FEEC3E2C6}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="LaserTurret_Play" ID="{4066F77A-AD72-46FF-8492-76C6EE1B1B16}">
+							<ChildrenList>
+								<Action Name="Play" ID="{FD657323-3A46-4C38-87F9-66AE33C4C620}" ShortID="340380908" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{82EE07EF-FE3A-4882-AFE5-4AB7DCBD42F8}" Global="false">
+											<ObjectRef Name="LaserTurret" ID="{73DB1CBC-362C-444C-8F37-F39D8FFA78CE}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
 										</Element>
 									</ElementList>
 								</Action>

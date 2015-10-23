@@ -50,6 +50,12 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="75"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="EngineOutput" ID="{AEB66469-3A8E-45BB-A04F-AD050DCFAE35}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

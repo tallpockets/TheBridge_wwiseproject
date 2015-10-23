@@ -2,29 +2,29 @@
 <ValidationCache Version="1" SchemaVersion="70">
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Actor-Mixer Hierarchy\RocketExplosive.wwu" DateLow="1255629312" DateHigh="30477178"/>
-	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="3345444224" DateHigh="30477631"/>
+	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="375186304" DateHigh="30477776"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1957329920" DateHigh="30477230"/>
-	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Attenuations\Default Work Unit.wwu" DateLow="2479103360" DateHigh="30477590"/>
+	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Attenuations\Default Work Unit.wwu" DateLow="385186304" DateHigh="30477776"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Conversion Settings\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Effects\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
-	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Effects\Factory Effects.wwu" DateLow="1957329920" DateHigh="30477230"/>
-	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Events\Default Work Unit.wwu" DateLow="928514688" DateHigh="30477572"/>
-	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Game Parameters\Default Work Unit.wwu" DateLow="3345444224" DateHigh="30477631"/>
-	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1214593920" DateHigh="30477605"/>
-	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1957329920" DateHigh="30477230"/>
+	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Effects\Factory Effects.wwu" DateLow="3664663040" DateHigh="30477760"/>
+	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Events\Default Work Unit.wwu" DateLow="375186304" DateHigh="30477776"/>
+	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Game Parameters\Default Work Unit.wwu" DateLow="574597632" DateHigh="30477758"/>
+	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="4018714624" DateHigh="30477731"/>
+	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="229237888" DateHigh="30477747"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Mixing Sessions\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Modulators\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Presets\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Queries\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Queries\Factory Queries.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\SoundBanks\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
-	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3345444224" DateHigh="30477631"/>
+	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3939695744" DateHigh="30477761"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\States\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Switches\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
-	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\TheBridge.kentjolly.wsettings" DateLow="2325575040" DateHigh="30477635"/>
+	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\TheBridge.kentjolly.wsettings" DateLow="3360284416" DateHigh="30477779"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\TheBridge.wproj" DateLow="1967329920" DateHigh="30477230"/>
 	<ValidationCacheItem File="Y:\Documents\wwise_projects\TheBridge_wwiseproject\Triggers\Default Work Unit.wwu" DateLow="1984317440" DateHigh="30476985"/>
 </ValidationCache>

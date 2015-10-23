@@ -34,6 +34,11 @@
 							</RTPCList>
 						</Property>
 					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Music" ID="{848E9EB2-1F4F-48CA-B4F6-D3FDD82986C9}">
 							<PropertyList>
