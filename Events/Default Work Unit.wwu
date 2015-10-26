@@ -82,6 +82,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="EmptySpace_Start" ID="{1E4B0FCD-BBFA-49D7-93AF-9BA01EBC234E}">
+							<ChildrenList>
+								<Action Name="Play" ID="{00CEBCFD-A45B-4DD2-95F8-2B2A2F2989D8}" ShortID="980305084" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{F489D191-18F5-4EDF-B4E0-D92C8158BDE9}" Global="false">
+											<ObjectRef Name="EmptySpace_02" ID="{C45ADD81-A616-46A3-8240-DAED3E6856ED}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EmptySpace_Stop" ID="{4D7A1C86-8C2D-45EE-9E2D-6D75FBEDA6BE}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{C338E65B-6360-4ED2-86EC-AC9C7D817394}" ShortID="526932434" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{5D2A0EDB-92E6-4294-B0DF-E42CF4D661DE}" Global="false">
+											<ObjectRef Name="EmptySpace_02" ID="{C45ADD81-A616-46A3-8240-DAED3E6856ED}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{3EC759A9-15EC-4426-928A-A90E3FC487DB}" ShortID="980769637">

@@ -14,6 +14,10 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="LaserTurret_Play" ID="{4066F77A-AD72-46FF-8492-76C6EE1B1B16}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Reactor_Stop" ID="{A99C0268-9821-48BE-ADD1-24EBFDBFF0B3}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -38,6 +42,14 @@
 						<RTPCValue>
 							<GameParameterRef Name="SfxVolume" ID="{09CCF50C-6E7B-4545-94BF-572FBDCD8B79}"/>
 							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="AmountLookingAtSun" ID="{1236491F-465D-466A-A3EE-D578C00B7419}"/>
+							<Value>0.036241610738255</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distance" ID="{EA36E923-5212-40A7-B769-BE370945500B}"/>
+							<Value>794.96644295302</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipPitch" ID="{44720D2B-08FA-4351-934D-68140C99A95C}"/>
@@ -65,7 +77,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ThrustPower" ID="{ABD376DF-0518-4B72-A94C-F1E41961EBB7}"/>
-							<Value>65.7579264319259</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

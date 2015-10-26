@@ -15,10 +15,114 @@
 					<ChildrenList>
 						<Sound Name="space_mainline_lp" ID="{2A173FF8-041C-48B9-9754-7FBEA92F010E}" ShortID="113053350" Type="SoundFX">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{EFEC21F9-1ED0-4B79-B6DB-C836582ECB96}" ShortID="430637315">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="AmountLookingAtSun" ID="{1236491F-465D-466A-A3EE-D578C00B7419}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{B4F73334-7CEC-4226-9C5C-D52FF8E4914A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>34</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.40268</XPos>
+														<YPos>14</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.4953</XPos>
+														<YPos>9</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{EA544B80-C391-4A99-9D06-69E6E8682DDB}" ShortID="784153280">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="AmountLookingAtSun" ID="{1236491F-465D-466A-A3EE-D578C00B7419}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{21550C3F-05AD-4765-9B2B-0B38D15FBE3A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>64</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.40618</XPos>
+														<YPos>55</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{2F6356F6-D4D9-475A-A844-562A19BC815D}" ShortID="882493244">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="AmountLookingAtSun" ID="{1236491F-465D-466A-A3EE-D578C00B7419}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{50C2BCC8-7200-41AE-9F0F-192975CE6B21}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.4</XPos>
+														<YPos>-5.63752</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -35,12 +139,7 @@
 														<Value>45</Value>
 													</ValueList>
 												</Property>
-												<Property Name="ConeUse" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="RadiusMax" Type="Real64" Value="2500"/>
+												<Property Name="RadiusMax" Type="Real64" Value="6500"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
@@ -56,7 +155,27 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>2500</XPos>
+																	<XPos>2129.31034727273</XPos>
+																	<YPos>0</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>2873.04074909091</XPos>
+																	<YPos>-6.49012</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>3881.66144363636</XPos>
+																	<YPos>-12.36248</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>5338.55799454545</XPos>
+																	<YPos>-15.26926</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>6500</XPos>
 																	<YPos>-200</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -71,7 +190,40 @@
 													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 												</VolumeWetUserUsage>
 												<LowPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="LowPassFilter" ID="{D1C31AD7-F8C3-4F5E-9D6B-3FA49588B6F9}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>1813.47962</XPos>
+																	<YPos>0</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>2302.50783</XPos>
+																	<YPos>24</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>3514.89028</XPos>
+																	<YPos>36</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>6500</XPos>
+																	<YPos>81</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
 												</LowPassFilterUsage>
 												<HighPassFilterUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
@@ -987,7 +1139,7 @@
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-4</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{C24BB5FB-B752-480E-AD7B-D7288B206379}" ShortID="179625618">
@@ -1055,7 +1207,7 @@
 																<Value>True</Value>
 															</ValueList>
 														</Property>
-														<Property Name="RadiusMax" Type="Real64" Value="350"/>
+														<Property Name="RadiusMax" Type="Real64" Value="450"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -1071,22 +1223,22 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>30.721</XPos>
+																			<XPos>39.4984285714286</XPos>
 																			<YPos>-1.43182</YPos>
 																			<Flags>0</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>55.40752</XPos>
+																			<XPos>71.23824</XPos>
 																			<YPos>-5.37416</YPos>
 																			<Flags>0</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>323.11912</XPos>
-																			<YPos>-17.98495</YPos>
+																			<XPos>413.32288</XPos>
+																			<YPos>-13.93707</YPos>
 																			<Flags>0</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>350</XPos>
+																			<XPos>450</XPos>
 																			<YPos>-200</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -1119,12 +1271,12 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>97.6489</XPos>
+																			<XPos>125.548585714286</XPos>
 																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>350</XPos>
+																			<XPos>450</XPos>
 																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -1175,8 +1327,13 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>6.57147</YPos>
+																<YPos>-200</YPos>
 																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.02253</XPos>
+																<YPos>6.29387</YPos>
+																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>1</XPos>
@@ -2809,6 +2966,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="LaserTurret" ID="{23DE48BA-A3C2-498F-9F73-4030921E52E8}" ShortID="513303610">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
@@ -2820,15 +2984,26 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="LaserTurret" ID="{73DB1CBC-362C-444C-8F37-F39D8FFA78CE}" ShortID="699406931">
 									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
 											<Custom>
 												<Attenuation Name="Attenuation (Custom)" ID="{178BC5A4-7D2A-413C-B925-B0237AE3AB8F}" ShortID="900703854">
 													<PropertyList>
-														<Property Name="RadiusMax" Type="Real64" Value="350"/>
+														<Property Name="RadiusMax" Type="Real64" Value="450"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -2844,7 +3019,12 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>350</XPos>
+																			<XPos>277.899685714286</XPos>
+																			<YPos>-6.04466</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>450</XPos>
 																			<YPos>-200</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -2871,7 +3051,7 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>350</XPos>
+																			<XPos>450</XPos>
 																			<YPos>18</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -2892,12 +3072,12 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>77.89969</XPos>
+																			<XPos>100.156744285714</XPos>
 																			<YPos>14</YPos>
 																			<Flags>0</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>350</XPos>
+																			<XPos>450</XPos>
 																			<YPos>18</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -3079,6 +3259,33 @@
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
+				<Sound Name="EmptySpace_02" ID="{C45ADD81-A616-46A3-8240-DAED3E6856ED}" ShortID="1049989725" Type="SoundFX">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EmptySpace_02" ID="{7F24B87F-1475-415A-85EE-BE9437D92178}" ShortID="461860972">
+							<Language>SFX</Language>
+							<AudioFile>EmptySpace_02.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="EmptySpace_02" ID="{7F24B87F-1475-415A-85EE-BE9437D92178}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
