@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BAF849B8-8207-43E6-B037-A712B2BDA653}" SchemaVersion="70">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{BAF849B8-8207-43E6-B037-A712B2BDA653}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BAF849B8-8207-43E6-B037-A712B2BDA653}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="CommandView" ID="{4D949B39-59C6-468D-9D3E-D1C2BBA503B7}">
+					<ChildrenList>
+						<State Name="None" ID="{0F77CCE5-9693-49EA-8FF3-53BB409847ED}"/>
+						<State Name="TopOff" ID="{16BACC56-3EEB-42B8-BA91-60D071B23071}"/>
+						<State Name="TopOn" ID="{A7ECA485-A8DF-4656-B38B-EEC407F42B52}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

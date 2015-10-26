@@ -3258,6 +3258,23 @@
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="CommandView" ID="{4D949B39-59C6-468D-9D3E-D1C2BBA503B7}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="TopOn" ID="{A7ECA485-A8DF-4656-B38B-EEC407F42B52}"/>
+								<State Name="Custom State" ID="{B9608216-9B26-4396-831A-B8B0DF798C23}" ShortID="700382163">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 				<Sound Name="EmptySpace_02" ID="{C45ADD81-A616-46A3-8240-DAED3E6856ED}" ShortID="1049989725" Type="SoundFX">
 					<PropertyList>
