@@ -94,6 +94,61 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Seek" ID="{1452DF3E-9C9B-46EB-8403-C56B3AFE338D}" ShortID="271448874" Type="Seek" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{176246CA-C36E-468F-A082-5AA67274A767}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{B7A36871-4AD5-4ABF-977C-BCDC882AFC56}" Global="false">
+											<ObjectRef Name="EmptySpace_02" ID="{C45ADD81-A616-46A3-8240-DAED3E6856ED}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Set Voice Pitch" ID="{746BF2CE-D0EF-40F5-814E-A54C24CA5355}" ShortID="484719079" Type="ChangePitch" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1088C390-FBD8-4BD6-AFD9-EF45437D8FB4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="250"/>
+															<Property Name="Min" Type="Real64" Value="-250"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9D66D4F5-C1F1-466E-8C60-31D49E942FC9}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{DBF2528E-DDDA-48B3-A3B5-A106658CDDA2}" Global="false">
+											<ObjectRef Name="EmptySpace_02" ID="{C45ADD81-A616-46A3-8240-DAED3E6856ED}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="EmptySpace_Stop" ID="{4D7A1C86-8C2D-45EE-9E2D-6D75FBEDA6BE}">
@@ -174,33 +229,17 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Play" ID="{3991DE82-AAA6-47E2-B8EC-D27B5EA46115}" ShortID="303338508" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{FE49BF7F-6BD6-4598-A32B-76EA2387FFF4}" Global="false">
+											<ObjectRef Name="Engine_Screamer_01" ID="{B9C38C85-E88D-4C7F-834F-BBF9F23B7198}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="EngineThump_Play" ID="{1F1E65C5-C839-44FA-9BAD-A93D437DA8A1}">
 							<ChildrenList>
-								<Action Name="Play" ID="{FA07FA59-FEFE-43FF-B820-863604A3CFDD}" ShortID="538625277" Type="Play" Scope="One" Global="false">
-									<ExcludedPlatformList>
-										<Platform>Mac</Platform>
-									</ExcludedPlatformList>
-									<PropertyList>
-										<Property Name="Delay" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{109A2459-18BC-4926-9AFD-B8F2FEEFC159}">
-														<PropertyList>
-															<Property Name="Max" Type="Real64" Value="10"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{E6D07144-6C08-4D13-9305-C11A8571C9A5}" Global="false">
-											<ObjectRef Name="EngineBeatSingles" ID="{19B282F5-E3CA-4B41-8D90-95699FAE4F72}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
-										</Element>
-									</ElementList>
-								</Action>
 								<Action Name="Play" ID="{9DFD8B9E-9E4F-4568-B5D8-DF5338973B90}" ShortID="666095454" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{F660D662-1E2E-437B-9918-0CF25B073415}" Global="false">
@@ -219,6 +258,16 @@
 									<ElementList>
 										<Element ID="{FBED2FCD-5DA2-415B-A151-63E13EF21AB9}" Global="false">
 											<ObjectRef Name="RocketRumbleLp" ID="{8DBF4669-AE11-4FA6-B7A5-188B3211479C}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{1E059643-07E3-4BF7-AE93-102F216C944C}" ShortID="720135561" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{98BD0871-656B-4A05-9FCE-1CE3FDBF8C9A}" Global="false">
+											<ObjectRef Name="Engine_Screamer_01" ID="{B9C38C85-E88D-4C7F-834F-BBF9F23B7198}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
 										</Element>
 									</ElementList>
 								</Action>

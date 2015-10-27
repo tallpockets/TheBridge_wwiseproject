@@ -45,19 +45,19 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="AmountLookingAtSun" ID="{1236491F-465D-466A-A3EE-D578C00B7419}"/>
-							<Value>0.036241610738255</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance" ID="{EA36E923-5212-40A7-B769-BE370945500B}"/>
-							<Value>794.96644295302</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipPitch" ID="{44720D2B-08FA-4351-934D-68140C99A95C}"/>
-							<Value>-0.0296296296296301</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ReactorPowerPercentage" ID="{A59CD535-1DF3-43A4-B41A-4DC15A5E82DF}"/>
-							<Value>7.33093419541692E-317</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="MasterVolume" ID="{F855F550-B15E-4FEE-983A-C2C42E90C4CB}"/>
@@ -65,7 +65,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="EngineOutput" ID="{AEB66469-3A8E-45BB-A04F-AD050DCFAE35}"/>
-							<Value>0.988429752066116</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="MusicVolume" ID="{253C1C84-7A82-4B1A-BD1C-A556C2777566}"/>
@@ -73,14 +73,16 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipYaw" ID="{11D5C78A-6AAE-4CF4-9B0A-8A767298E8FE}"/>
-							<Value>-0.0138451756477509</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ThrustPower" ID="{ABD376DF-0518-4B72-A94C-F1E41961EBB7}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="TopOn" ID="{A7ECA485-A8DF-4656-B38B-EEC407F42B52}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>
