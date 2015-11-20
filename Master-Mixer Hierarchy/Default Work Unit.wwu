@@ -5,6 +5,78 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
+						<Property Name="BypassEffect1" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{C9848E84-B67A-4656-A7C5-2F905131454F}" ShortID="404638615">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="SpeakerMode" ID="{572FA48B-9020-4A8F-9B1D-98AA1F0AA1FB}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{38A2B5DC-D250-4D1E-85D0-DD74673BA958}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>4</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="BypassEffect2" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{DB7F214A-A787-45A7-8CAA-14BE2B6F214F}" ShortID="870298384">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="SpeakerMode" ID="{572FA48B-9020-4A8F-9B1D-98AA1F0AA1FB}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{05965378-05C2-48DC-BAB9-B44B8B456F52}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>4</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<RTPCList>
 								<RTPC Name="" ID="{0AD0DA9A-1956-4C8A-9FAC-BC29597D5ED7}" ShortID="456145007">
@@ -37,6 +109,31 @@
 					<ReferenceList>
 						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 							<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1">
+							<Custom>
+								<Effect Name="Wwise Parametric EQ (Custom)" ID="{1EFE1BF0-10DB-4E43-A920-AF0E31E6F892}" ShortID="1004002188" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<PropertyList>
+										<Property Name="FrequencyBand2" Type="Real32" Value="146"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="562"/>
+										<Property Name="GainBand2" Type="Real32" Value="16"/>
+										<Property Name="GainBand3" Type="Real32" Value="-6"/>
+										<Property Name="OnOffBand1" Type="bool" Value="False"/>
+										<Property Name="QFactorBand2" Type="Real32" Value="0.8"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect2">
+							<Custom>
+								<Effect Name="Wwise Compressor (Custom)" ID="{030AC78B-9FE2-4BD8-A482-CE1376535518}" ShortID="666306587" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<PropertyList>
+										<Property Name="OutputGain" Type="Real32" Value="4.5"/>
+										<Property Name="Ratio" Type="Real32" Value="2.3"/>
+										<Property Name="Threshold" Type="Real32" Value="-25.3"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -103,17 +200,8 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
-							<ChildrenList>
-								<Bus Name="Reverb" ID="{67D266E4-205C-411D-94FE-80D9877C6CE4}">
-									<ReferenceList>
-										<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
-											<ObjectRef Name="Large_Bright_Chamber1" ID="{0BFA2291-5716-4759-AC24-F59D29E8F2E4}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-										</Reference>
-									</ReferenceList>
-								</Bus>
-							</ChildrenList>
 						</Bus>
-						<Bus Name="Vo" ID="{E7DD8FB7-DEA2-4363-B550-E9A8EC567BEB}"/>
+						<Bus Name="empty" ID="{E7DD8FB7-DEA2-4363-B550-E9A8EC567BEB}"/>
 						<Bus Name="UI" ID="{9D3A3673-B45F-4443-B5B5-17BB17B5EFDA}">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
@@ -146,6 +234,13 @@
 								</Property>
 							</PropertyList>
 						</Bus>
+						<AuxBus Name="VerbBus" ID="{F913579E-D1F2-4E3C-8A6A-C7775E615EC4}">
+							<ReferenceList>
+								<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Big_Garage1" ID="{172402A8-22F4-40FC-BE1D-5269594CB633}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>

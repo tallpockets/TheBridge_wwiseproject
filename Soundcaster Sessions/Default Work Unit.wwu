@@ -26,12 +26,20 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="ASC_Theme_Play" ID="{3877001E-B1BE-4C9E-A6E6-52BC53CB855E}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="BridgeAmbient_Play" ID="{53AE074E-1E78-4A30-864D-E264F9C42825}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="RocketMotorAmbient_Start" ID="{70CBF2C9-F08C-45EF-B82C-4708E126B231}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ASC_Theme_Stop" ID="{7BFB02E0-392C-48D9-B2C4-4F0550CA27AA}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="RocketMotorAmbient_Stop" ID="{F9D3821D-1618-4506-A2D6-53D4F0C3729C}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
@@ -76,12 +84,28 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="SpeakerMode" ID="{572FA48B-9020-4A8F-9B1D-98AA1F0AA1FB}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ExplosiveIntensity" ID="{4FC4DF8D-CCE4-494C-A111-8C7C628CEA7E}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="GlanceIntensity" ID="{04E7D6D2-07B0-4E06-87E9-9BD700D7C9D7}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="ThrustPower" ID="{ABD376DF-0518-4B72-A94C-F1E41961EBB7}"/>
 							<Value>0</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Doppler" ID="{8673EAE2-9CE8-4CA1-B679-511CF7A37873}"/>
+							<Value>7.33093419541692E-317</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="TopOn" ID="{A7ECA485-A8DF-4656-B38B-EEC407F42B52}"/>
+						<CurrentStateRef Name="TopOff" ID="{16BACC56-3EEB-42B8-BA91-60D071B23071}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
