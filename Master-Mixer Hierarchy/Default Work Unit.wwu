@@ -200,6 +200,15 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Compressed" ID="{408F9556-1F5D-4DFE-A970-232E5CE0BD57}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+											<ObjectRef Name="High_Impact" ID="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+							</ChildrenList>
 						</Bus>
 						<Bus Name="empty" ID="{E7DD8FB7-DEA2-4363-B550-E9A8EC567BEB}"/>
 						<Bus Name="UI" ID="{9D3A3673-B45F-4443-B5B5-17BB17B5EFDA}">

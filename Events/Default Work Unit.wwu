@@ -310,6 +310,20 @@
 						<Event Name="sfx_blasterImpact" ID="{E5D90597-9E8B-479E-AE62-29F6DDB1D10F}">
 							<ChildrenList>
 								<Action Name="Play" ID="{21D6E355-E94A-49C2-91C1-932A82FA7E7E}" ShortID="723962344" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A1411ABF-9671-4671-9380-104A43CA8843}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="0.05"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{568CB988-B38B-4EFB-AE5B-771CBF3AEA57}" Global="false">
 											<ObjectRef Name="BlasterImpactA" ID="{FAB68695-3815-413E-A33E-6ED71A14E1F4}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
@@ -317,6 +331,20 @@
 									</ElementList>
 								</Action>
 								<Action Name="Play" ID="{2F6CCE93-4952-48A7-90FC-EE8A8BB17093}" ShortID="17651756" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AC1BA7B4-1662-432C-8A7D-5590E3111B73}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="0.05"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{18F71C07-FD68-4996-A7A2-4482770FA61D}" Global="false">
 											<ObjectRef Name="BlasterImpactB" ID="{7BE6BAE5-5C84-4A13-9575-119BC371DA9B}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
@@ -684,7 +712,7 @@
 								<Action Name="Play" ID="{5CBAC1ED-2DA4-42D8-9B5E-064732DD309D}" ShortID="151970782" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{A8644DBA-EBFC-468A-B49F-E78B3A8ED522}" Global="false">
-											<ObjectRef Name="Motor_OffClunk" ID="{EC219260-8CDE-4573-BF78-F143AC9D6A35}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+											<ObjectRef Name="Failbeeps" ID="{EC219260-8CDE-4573-BF78-F143AC9D6A35}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -718,6 +746,218 @@
 									<ElementList>
 										<Element ID="{82EE07EF-FE3A-4882-AFE5-4AB7DCBD42F8}" Global="false">
 											<ObjectRef Name="LaserTurret" ID="{73DB1CBC-362C-444C-8F37-F39D8FFA78CE}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HackDish_Beam_Start" ID="{55F3127D-F631-4D19-B84D-AEF120574909}">
+							<ChildrenList>
+								<Action Name="Play" ID="{E1CC2699-0C39-43F8-8809-DE546B8B1002}" ShortID="374065065" Type="Play" Scope="One" Global="false">
+									<ExcludedPlatformList>
+										<Platform>Mac</Platform>
+									</ExcludedPlatformList>
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BEEE20EF-D443-4021-AFCB-7EAD24B016B8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="0.15"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{A83C8FDF-D781-4F85-A0F2-2417BE02CAC5}" Global="false">
+											<ObjectRef Name="BeamStartProc" ID="{38CBEC67-4B44-48BD-8629-BC0EAA1AFE5E}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{84A563F0-0067-4C1D-8554-77B1645FF86A}" ShortID="999466243" Type="Play" Scope="One" Global="false">
+									<ExcludedPlatformList>
+										<Platform>Mac</Platform>
+									</ExcludedPlatformList>
+									<ElementList>
+										<Element ID="{2D5B04E5-1982-4A30-B46A-648E87279827}" Global="false">
+											<ObjectRef Name="beamstart_02" ID="{43E62AB4-5AC6-4854-A155-3CC7A0BD235F}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{7569E234-203A-4366-9F47-14190F90C779}" ShortID="1009702755" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B670A265-3DB4-48E5-9BEF-59B79DD55387}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1.5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{BAFBEAD7-9283-401D-98A8-9123B1DD7BAB}" Global="false">
+											<ObjectRef Name="highpitch_02" ID="{97B62660-C7E4-4797-8E38-1B38B67CD63B}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Set Voice Pitch" ID="{FD6789E5-E4F3-4FFC-9266-023F1AA1202A}" ShortID="638057799" Type="ChangePitch" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32" Value="-2400"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{F1935991-7073-4C6F-A580-77642261485D}" Global="false">
+											<ObjectRef Name="beam_loop" ID="{393E1A21-7F13-4FAD-BBC9-2B26E2CFBA3A}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Set Voice Pitch" ID="{3EA6F960-8489-4201-9DE2-11749B4149F0}" ShortID="142823931" Type="ChangePitch" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.7"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{30A9D5D7-358E-44FA-AFCE-BB022367E721}" Global="false">
+											<ObjectRef Name="beam_loop" ID="{393E1A21-7F13-4FAD-BBC9-2B26E2CFBA3A}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{C583F6FA-1FF7-4364-9266-AA7B9E89B178}" ShortID="478129324" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{F7DB151D-828D-4E9D-95B6-BB42B1251E6B}" Global="false">
+											<ObjectRef Name="beam_loop" ID="{393E1A21-7F13-4FAD-BBC9-2B26E2CFBA3A}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Seek" ID="{029CB958-2768-40CE-9760-D7F816DEB375}" ShortID="674337321" Type="Seek" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9D2A5C38-0F40-4168-9653-132DCBE7EA8E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{2E0213C6-F7BA-4429-A2B0-D4ABBFF7B001}" Global="false">
+											<ObjectRef Name="DataLoop2" ID="{BBC1DCD6-D565-4B9E-9ED9-3A6FC8925DAC}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{DECB55DC-E791-4D85-BEC7-7BEEC53DA2C6}" ShortID="253663831" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{4EB312CC-5C4F-424A-B1A3-42C37BC4146B}" Global="false">
+											<ObjectRef Name="DataLoop2" ID="{BBC1DCD6-D565-4B9E-9ED9-3A6FC8925DAC}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{2F2A9E07-2CA3-4B14-B981-27F5CE49DBCC}" ShortID="189999881" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{41A01C42-DC54-4754-A4B5-37CCD0133DB4}" Global="false">
+											<ObjectRef Name="DataBeeps" ID="{931F9569-00DA-42D5-92C5-F6AA296B52F1}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HackDish_Beam_Fail" ID="{F63E114C-3A9F-45B8-ACAE-65952752A47C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{3AD89DD3-F425-4EDF-8005-FCEAD25B25EB}" ShortID="442907638" Type="Play" Scope="One" Global="false">
+									<ExcludedPlatformList>
+										<Platform>Mac</Platform>
+									</ExcludedPlatformList>
+									<ElementList>
+										<Element ID="{46DF8901-DD83-4DAF-980B-043632436D82}" Global="false">
+											<ObjectRef Name="FailLong" ID="{D8072650-6CEE-4D3C-A690-E409DEFED96F}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{EE8FEF46-868F-4E42-83E9-B2F8F63E6913}" ShortID="903639943" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{4A34C4AF-4F86-4B5C-B937-88FC4F434ACB}" Global="false">
+											<ObjectRef Name="Failbeeps" ID="{CD13632A-3BDB-46D9-8280-43657D18E6C4}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HackDish_Beam_Stop" ID="{30F1257C-7B86-44F1-BA7C-904CBDA183A5}">
+							<ChildrenList>
+								<Action Name="Set Voice Pitch" ID="{8CAF88DC-F76A-4A78-A641-27A4E2E61C63}" ShortID="1015195054" Type="ChangePitch" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.75"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{EAB10CCA-9660-4FDB-93BA-AB1BF3CBE92B}" Global="false">
+											<ObjectRef Name="beam_loop" ID="{393E1A21-7F13-4FAD-BBC9-2B26E2CFBA3A}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Set Voice Pitch" ID="{F801CBAB-56C5-4733-909C-BE6C118B217B}" ShortID="572209101" Type="ChangePitch" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.7"/>
+										<Property Name="Pitch" Type="int32" Value="-2400"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{A6F8151B-12DB-4012-BB63-9BBDFC900427}" Global="false">
+											<ObjectRef Name="beam_loop" ID="{393E1A21-7F13-4FAD-BBC9-2B26E2CFBA3A}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{8AEE3EC5-A96E-4C85-AFF8-E15894289C15}" ShortID="272642366" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{C86B3BF4-B466-44F2-93C9-A6E6EB0E39D0}" Global="false">
+											<ObjectRef Name="beam_loop" ID="{393E1A21-7F13-4FAD-BBC9-2B26E2CFBA3A}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{0C83CB40-48BC-4A73-92DF-CE35A56FA32F}" ShortID="110393410" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{7FA1AC83-E35F-43AF-96D7-F5480A8E3AD3}" Global="false">
+											<ObjectRef Name="DataLoop2" ID="{BBC1DCD6-D565-4B9E-9ED9-3A6FC8925DAC}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{5C35CF7F-B41F-4B2E-9AA4-5E80FC4380F9}" ShortID="68323575" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{1E2F44F1-F97F-4392-8591-CFF34D010FFB}" Global="false">
+											<ObjectRef Name="DataBeeps" ID="{931F9569-00DA-42D5-92C5-F6AA296B52F1}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HackDish_Beam_Succeed" ID="{DB4819E4-7BF9-434F-81CA-5F1866CFB0E4}">
+							<ChildrenList>
+								<Action Name="Play" ID="{FB3F73E6-D4F5-42CF-BF18-2BD9FB340E42}" ShortID="1036281515" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{C5E515E8-AB59-4354-84ED-8E6E6C8EB3D0}" Global="false">
+											<ObjectRef Name="Successlong" ID="{3A268A6F-24E7-45A7-A473-80C108024075}" WorkUnitID="{B0D1577A-C38D-44EB-B56D-55E7576C1428}"/>
 										</Element>
 									</ElementList>
 								</Action>

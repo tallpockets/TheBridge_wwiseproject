@@ -42,8 +42,20 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="HackDish_Beam_Stop" ID="{30F1257C-7B86-44F1-BA7C-904CBDA183A5}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="RocketMotorAmbient_Stop" ID="{F9D3821D-1618-4506-A2D6-53D4F0C3729C}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
 							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="HackDish_Beam_Start" ID="{55F3127D-F631-4D19-B84D-AEF120574909}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="HackDish_Beam_Fail" ID="{F63E114C-3A9F-45B8-ACAE-65952752A47C}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<Position X="3" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
