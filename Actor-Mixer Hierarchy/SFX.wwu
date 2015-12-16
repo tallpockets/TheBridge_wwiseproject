@@ -44,6 +44,11 @@
 														<Flags>0</Flags>
 													</Point>
 													<Point>
+														<XPos>0.65824</XPos>
+														<YPos>-1</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
 														<XPos>1</XPos>
 														<YPos>0</YPos>
 														<Flags>37</Flags>
@@ -73,18 +78,18 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>0.71624</XPos>
-														<YPos>58</YPos>
+														<XPos>0.63458</XPos>
+														<YPos>45</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>0.84295</XPos>
-														<YPos>46</YPos>
+														<XPos>0.84051</XPos>
+														<YPos>16</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>1</XPos>
-														<YPos>26</YPos>
+														<YPos>3</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -94,8 +99,16 @@
 								</Property>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>200</Value>
+									</ValueList>
+								</Property>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{2F6356F6-D4D9-475A-A844-562A19BC815D}" ShortID="882493244">
 											<ReferenceList>
@@ -116,6 +129,11 @@
 													<Point>
 														<XPos>0.4</XPos>
 														<YPos>-5.63752</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.66639</XPos>
+														<YPos>0.02337</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
@@ -160,23 +178,23 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>1801.72414</XPos>
+																	<XPos>2304.08634</XPos>
 																	<YPos>0</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>2431.03448</XPos>
+																	<XPos>2800</XPos>
 																	<YPos>-6.49012</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>3284.48276</XPos>
-																	<YPos>-12.36248</YPos>
+																	<XPos>3007.31741</XPos>
+																	<YPos>-12.55744</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>4517.24138</XPos>
-																	<YPos>-15.26926</YPos>
+																	<XPos>4525.9028</XPos>
+																	<YPos>-18.11257</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
@@ -234,7 +252,40 @@
 													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
 												</HighPassFilterUsage>
 												<SpreadUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="Spread" ID="{23CA4DCC-A03D-4603-A959-D2D1D899A5E8}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="1"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>100</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>1186.61417</XPos>
+																	<YPos>100</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>1905.51182</XPos>
+																	<YPos>76.6093</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>2399.2126</XPos>
+																	<YPos>25.57503</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>5500</XPos>
+																	<YPos>0</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
 												</SpreadUsage>
 												<FocusUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
@@ -3336,7 +3387,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3360,9 +3411,14 @@
 								</Sound>
 								<Sound Name="beamstart_02" ID="{43E62AB4-5AC6-4854-A155-3CC7A0BD235F}" ShortID="135231623" Type="SoundFX">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>510</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3387,6 +3443,9 @@
 								<Sound Name="BeamStartProc" ID="{38CBEC67-4B44-48BD-8629-BC0EAA1AFE5E}" ShortID="896738197" Type="SoundFX">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>1540</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{053BCAA8-37A0-4B2B-B458-AF8086BE5332}">
@@ -3431,7 +3490,7 @@
 										<Property Name="OverrideConversion" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>960</Value>
+												<Value>990</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
@@ -3775,6 +3834,1104 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
+						<ActorMixer Name="ShieldProjector" ID="{A9297C14-8059-4C25-9C20-D123E31918DF}" ShortID="96288612">
+							<PropertyList>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{9BD3812B-222A-4DDE-A18C-053BC4896958}" ShortID="267177549">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="600"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{82591F1C-B3A2-4665-922D-CC37189CFB0F}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>171.09112</XPos>
+																	<YPos>0</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>438.3577</XPos>
+																	<YPos>-6.41083</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>600</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="PCM_Mono_22k" ID="{DC1CC710-C1A0-42ED-92F6-BD739A0116EA}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Shield_speedup" ID="{A9E180A6-A9BA-4E52-BBFC-1EA3D0BF288A}" ShortID="173630147" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Shield_speedup" ID="{68BF0EF5-4607-4CE2-89E1-B2406D73C3BF}" ShortID="135209562">
+											<Language>SFX</Language>
+											<AudioFile>Shield_speedup.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Shield_speedup" ID="{68BF0EF5-4607-4CE2-89E1-B2406D73C3BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="shieldSlowDown" ID="{77E606C9-4BF1-4EDE-8898-B5DFADAFD88B}" ShortID="708464734" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="shieldSlowDown" ID="{461020CF-09E1-4B1A-81A2-6D39A67940A3}" ShortID="766255757">
+											<Language>SFX</Language>
+											<AudioFile>shieldSlowDown.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="shieldSlowDown" ID="{461020CF-09E1-4B1A-81A2-6D39A67940A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<BlendContainer Name="ShieldLooop" ID="{8D37A8A7-B99D-4148-B56D-1FE1348A8E2E}" ShortID="513217575">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-530</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{6855BE2A-557C-4962-A47F-C7121A90850E}" ShortID="684874723">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ShieldRotate" ID="{E3630C9B-F8B3-4217-94C8-C45DD221F50B}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{D4479B4C-FE69-4E5E-9194-C6C69386A227}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>25</XPos>
+																<YPos>208</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+												<RTPC Name="" ID="{B2AB02F7-A225-4579-A24C-469F881E965C}" ShortID="42118682">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ShieldStrength" ID="{47AF9AF1-2AE8-4634-B5B3-81E71BFC09EA}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{471DA3E9-3E9A-468E-9808-D159B9669780}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-515</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.98162</XPos>
+																<YPos>-102</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{820A6A68-C5D9-4BE4-A3DF-16AEA2584B6E}" ShortID="978119198">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ShieldStrength" ID="{47AF9AF1-2AE8-4634-B5B3-81E71BFC09EA}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{207035AD-588A-413C-B2CF-98CB06B05B89}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>10.58438</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.91526</XPos>
+																<YPos>4.65099</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{07D62C59-C73A-4EF3-9DED-DDC7A9A3FC32}" ShortID="1068930332">
+													<PropertyList>
+														<Property Name="ConeAttenuation" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+														<Property Name="ConeLowPassFilterValue" Type="int32">
+															<ValueList>
+																<Value>26</Value>
+															</ValueList>
+														</Property>
+														<Property Name="ConeUse" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="RadiusMax" Type="Real64" Value="550"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{C9C54BBF-9A47-48B4-95B7-B50FEF030BE6}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>77.95276</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>411.72666</XPos>
+																			<YPos>-7.86467</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>550</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="baseShieldLoop" ID="{2E74008F-41E4-4994-BA19-0FBC3BF85297}" ShortID="736487585" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="baseShieldLoop" ID="{1BFA6E22-10D5-4C20-AA4F-431D84506219}" ShortID="78322252">
+													<Language>SFX</Language>
+													<AudioFile>baseShieldLoop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="baseShieldLoop" ID="{1BFA6E22-10D5-4C20-AA4F-431D84506219}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShieldLoop_Add2" ID="{AC8AB29E-1CB0-4B7A-B358-11C00CB74AA6}" ShortID="51028707" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldLoop_Add2" ID="{2AC3618F-65FC-462B-A76D-A393CD625A8D}" ShortID="199867076">
+													<Language>SFX</Language>
+													<AudioFile>ShieldLoop_Add2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldLoop_Add2" ID="{2AC3618F-65FC-462B-A76D-A393CD625A8D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShieldLoop_Add3" ID="{576BBB05-ADF0-4B3A-8DA9-DAA6AF8F05D9}" ShortID="455910564" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shield_RotateLoop" ID="{B66F6806-CFC3-4DDC-A5E2-2010C6C59226}" ShortID="849593868">
+													<Language>SFX</Language>
+													<AudioFile>Shield_RotateLoop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Shield_RotateLoop" ID="{B66F6806-CFC3-4DDC-A5E2-2010C6C59226}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="base" ID="{921E430B-A5F9-40C8-851B-8E9EF1F7AEEF}" ShortID="626840037">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{47EC2174-5767-4CA5-B423-650ABF4E2D3D}" ShortID="867516333">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{70D4770A-B073-4485-BCE9-DAF3EB9B4474}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>1642</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{7EC4A0E3-423B-4400-84E9-6B37300F2F95}" ShortID="108836593">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{22DF9AE3-C0C5-46A4-8170-E959F35A6613}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-9.78042</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0.15793</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="baseShieldLoop" ID="{2E74008F-41E4-4994-BA19-0FBC3BF85297}"/>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="add a" ID="{FA1A1811-8FA5-4854-9F2E-2CC7355EFE81}" ShortID="792129224">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{05BBF4BA-ADF0-4D44-A5D2-731F0E9CA7D0}" ShortID="644963660">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{AF35A023-9879-4BC7-92CF-FB9E1AE35227}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-2421</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-951</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{3F9B0068-0939-4975-A6BF-7C6C7EA8E4C8}" ShortID="876619462">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{825ABCF0-02D3-49DE-B39B-FFFF413ADCE0}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-0.07861</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="ShieldLoop_Add2" ID="{AC8AB29E-1CB0-4B7A-B358-11C00CB74AA6}"/>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="add b" ID="{CB2028ED-A9AC-4C0E-80FA-40F6BB503933}" ShortID="1022840878">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{3E3F419A-FFD9-4D65-8FF6-8D9239E74C98}" ShortID="279434850">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{175BFCB2-F260-4E7D-B8B8-55D35A64A4EC}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-2680</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-692</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{58A628B5-87CC-4707-8DF7-2A9F6B40459C}" ShortID="554125940">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{CCF669AD-5986-42B4-B9D6-FB6939DC0234}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-8.86526</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-0.73445</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="ShieldLoop_Add3" ID="{576BBB05-ADF0-4B3A-8DA9-DAA6AF8F05D9}"/>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<Sound Name="ShieldLoop_add" ID="{CF740C03-567B-4645-B9DE-5CC1CE881844}" ShortID="308445998" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>530</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{6B00C6B0-343D-44CB-A769-FAFE5D0FF616}" ShortID="888836072">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ShieldRotate" ID="{E3630C9B-F8B3-4217-94C8-C45DD221F50B}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{94AD3C5C-B5DB-48E0-8C5C-7CC11B026D67}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>25</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-40</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{B571A510-EE9F-4A6B-98A0-BFA7BECBB831}" ShortID="378310205">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ShieldRotate" ID="{E3630C9B-F8B3-4217-94C8-C45DD221F50B}" WorkUnitID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{6B14BA27-69A2-4BFE-96FE-98694FB6CD51}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>25</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{502E8058-2B89-4472-81D1-2FD376237AF1}" ShortID="844409033">
+													<PropertyList>
+														<Property Name="ConeAttenuation" Type="Real64">
+															<ValueList>
+																<Value>-16</Value>
+															</ValueList>
+														</Property>
+														<Property Name="ConeLowPassFilterValue" Type="int32">
+															<ValueList>
+																<Value>37</Value>
+															</ValueList>
+														</Property>
+														<Property Name="ConeUse" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="RadiusMax" Type="Real64" Value="500"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{35CFD303-72A2-4858-84DB-D7F7529E83B3}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>500</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="PCM_Mono_22k" ID="{DC1CC710-C1A0-42ED-92F6-BD739A0116EA}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ShieldLoop_add" ID="{5E12A783-D55A-4ED9-95BE-E396A5F461A7}" ShortID="355726264">
+											<Language>SFX</Language>
+											<AudioFile>ShieldLoop_add.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ShieldLoop_add" ID="{5E12A783-D55A-4ED9-95BE-E396A5F461A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="ShieldHitsv1" ID="{066C11C0-C3B2-4411-A1E4-6823324EBDD0}" ShortID="963872141">
+									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PositioningType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{5B2EB591-1B9E-4E28-AE98-08CAD54D7A91}" ShortID="166228670">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="1500"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{480DDDA6-9617-4303-AE31-6125E7B5FDB4}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>1500</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry">
+																<Curve Name="VolumeWetUser" ID="{C885B318-1428-4718-8702-B9AEF8750707}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>1500</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ShieldHItsV1_01" ID="{851BFA38-C9D9-458B-A279-D2A2F36AE71E}" ShortID="282526137" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldHItsV1_01" ID="{C6096D70-FE1E-4EEF-9CF7-F312C43D83DD}" ShortID="611572676">
+													<Language>SFX</Language>
+													<AudioFile>ShieldHItsV1_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldHItsV1_01" ID="{C6096D70-FE1E-4EEF-9CF7-F312C43D83DD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShieldHItsV1_02" ID="{5949A2E5-F5EB-44BA-B5BB-25AA019E16BB}" ShortID="488182879" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldHItsV1_02" ID="{D7A5A011-7989-45B5-AC3F-0DB89E573205}" ShortID="777407770">
+													<Language>SFX</Language>
+													<AudioFile>ShieldHItsV1_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldHItsV1_02" ID="{D7A5A011-7989-45B5-AC3F-0DB89E573205}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShieldHItsV1_03" ID="{3AAF26FB-5232-4021-9874-720B22AD56F7}" ShortID="775934575" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldHItsV1_03" ID="{689C5E8F-2243-463E-A15D-FC41E7F30219}" ShortID="738245686">
+													<Language>SFX</Language>
+													<AudioFile>ShieldHItsV1_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldHItsV1_03" ID="{689C5E8F-2243-463E-A15D-FC41E7F30219}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShieldHItsV1_04" ID="{D2FACFD9-43E7-4A2D-99FB-7B9B66C62B0B}" ShortID="703588857" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldHItsV1_04" ID="{E4BB5FFD-7D0D-49B5-BD82-4FFA8D416617}" ShortID="95379464">
+													<Language>SFX</Language>
+													<AudioFile>ShieldHItsV1_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldHItsV1_04" ID="{E4BB5FFD-7D0D-49B5-BD82-4FFA8D416617}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShieldHItsV1_05" ID="{DC01A8D3-9E11-402F-9DCC-D85CCE87E6F7}" ShortID="592363061" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldHItsV1_05" ID="{78D9D720-997D-4FFB-A0D4-754DB443B561}" ShortID="351241500">
+													<Language>SFX</Language>
+													<AudioFile>ShieldHItsV1_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldHItsV1_05" ID="{78D9D720-997D-4FFB-A0D4-754DB443B561}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="ShieldHitsV2" ID="{FA1C89F3-83D1-4823-8BA8-2AB61710DCC5}" ShortID="204627623">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ShieldHitsV2_01" ID="{4C5DEFDF-CFF5-46B8-91AF-6A0682EE93C4}" ShortID="126478992" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldHitsV2_01" ID="{8451453D-9E60-4092-9235-9758700AF490}" ShortID="938142683">
+													<Language>SFX</Language>
+													<AudioFile>ShieldHitsV2_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldHitsV2_01" ID="{8451453D-9E60-4092-9235-9758700AF490}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShieldHitsV2_02" ID="{7132CFF5-2BC2-4D1D-8AAA-4A6679ADEE8F}" ShortID="866027809" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldHitsV2_02" ID="{BAF469D1-B5F7-4271-B639-2A031AC5C148}" ShortID="944546615">
+													<Language>SFX</Language>
+													<AudioFile>ShieldHitsV2_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldHitsV2_02" ID="{BAF469D1-B5F7-4271-B639-2A031AC5C148}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShieldHitsV2_03" ID="{3D896068-EDD8-4410-A80D-15BD6E3D0B7B}" ShortID="604960782" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldHitsV2_03" ID="{A0B9C82F-6326-422D-9BD1-C8FBDA092D04}" ShortID="14933406">
+													<Language>SFX</Language>
+													<AudioFile>ShieldHitsV2_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldHitsV2_03" ID="{A0B9C82F-6326-422D-9BD1-C8FBDA092D04}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShieldHitsV2_04" ID="{05B1D8A2-675A-49FB-87D0-793A1F89F26B}" ShortID="471109166" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldHitsV2_04" ID="{4BB57559-700E-4290-B57A-0977B48AD1AF}" ShortID="816364851">
+													<Language>SFX</Language>
+													<AudioFile>ShieldHitsV2_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldHitsV2_04" ID="{4BB57559-700E-4290-B57A-0977B48AD1AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ShieldHitsV2_05" ID="{D4D94BD1-DBBC-47BF-A638-C2B2B66DE17F}" ShortID="449618449" Type="SoundFX">
+											<PropertyList>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Component_Basic" ID="{F1665AFE-69B0-4A92-81B5-81FE44EB12C9}" WorkUnitID="{AFA84A43-0A7B-4381-A9DF-3CDEB5D73829}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Sfx" ID="{ACED2DCF-8E9B-4DA8-92FC-365AA532AFA5}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ShieldHitsV2_05" ID="{A19A343E-FEC0-4240-AFAE-E94EB79B0098}" ShortID="446250853">
+													<Language>SFX</Language>
+													<AudioFile>ShieldHitsV2_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ShieldHitsV2_05" ID="{A19A343E-FEC0-4240-AFAE-E94EB79B0098}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="CommandView" ID="{4D949B39-59C6-468D-9D3E-D1C2BBA503B7}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+							</StateInfo>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 				<Sound Name="EmptySpace_02" ID="{C45ADD81-A616-46A3-8240-DAED3E6856ED}" ShortID="1049989725" Type="SoundFX">
@@ -3943,8 +5100,15 @@
 					<ChildrenList>
 						<Sound Name="sfx_spaceTorpedo_lp" ID="{0C4D4108-4EC2-4DB4-85D6-D050845D026F}" ShortID="773805805" Type="SoundFX">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
@@ -3978,6 +5142,11 @@
 									</RTPCList>
 								</Property>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-5</Value>

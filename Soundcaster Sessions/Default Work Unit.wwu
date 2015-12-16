@@ -6,52 +6,28 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{F5AC0C8B-5796-4BB6-A934-F7A842A1BC40}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Reactor_Start" ID="{B02882F2-094A-4AFD-B247-CEBC4721FCB0}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<ObjectRef Name="ShieldProjector_Rotate_Start" ID="{74A0DBC1-5F1B-4D60-8C26-BBEA49455149}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RocketRumbleLp_Play" ID="{B49AE8CE-3060-4612-85A9-F58E9AD053D2}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<ObjectRef Name="ShieldProjector_Rotate_Stop" ID="{7C5ABAA6-84D4-4B73-BCF8-12DACE73BE06}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="LaserTurret_Play" ID="{4066F77A-AD72-46FF-8492-76C6EE1B1B16}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Reactor_Stop" ID="{A99C0268-9821-48BE-ADD1-24EBFDBFF0B3}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<ObjectRef Name="ShieldProjector_Start" ID="{CB748DA8-D6C7-42D7-BCBE-DD6F3AF6BD2B}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RocketRumbleLp_Stop" ID="{C497AA50-0C3B-414E-A7A9-DF6C12F26E96}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<ObjectRef Name="ShieldProjector_Stop" ID="{5EEEB11D-BFE6-43C3-95E8-B216E54CBD56}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="ASC_Theme_Play" ID="{3877001E-B1BE-4C9E-A6E6-52BC53CB855E}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
-							<Position X="1" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="BridgeAmbient_Play" ID="{53AE074E-1E78-4A30-864D-E264F9C42825}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
+							<ObjectRef Name="ShieldProjector_Hit" ID="{DFEA8D98-F6C9-4C7A-A78D-45151CB541DA}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
 							<Position X="2" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="RocketMotorAmbient_Start" ID="{70CBF2C9-F08C-45EF-B82C-4708E126B231}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
-							<Position X="2" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="ASC_Theme_Stop" ID="{7BFB02E0-392C-48D9-B2C4-4F0550CA27AA}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
-							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="HackDish_Beam_Stop" ID="{30F1257C-7B86-44F1-BA7C-904CBDA183A5}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
 							<Position X="2" Y="3"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="RocketMotorAmbient_Stop" ID="{F9D3821D-1618-4506-A2D6-53D4F0C3729C}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="HackDish_Beam_Start" ID="{55F3127D-F631-4D19-B84D-AEF120574909}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
-							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="HackDish_Beam_Fail" ID="{F63E114C-3A9F-45B8-ACAE-65952752A47C}" WorkUnitID="{0EDAF08C-2C0D-48DD-8962-638BAE79C784}"/>
@@ -73,7 +49,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipPitch" ID="{44720D2B-08FA-4351-934D-68140C99A95C}"/>
-							<Value>0</Value>
+							<Value>-1.05226480836237</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ReactorPowerPercentage" ID="{A59CD535-1DF3-43A4-B41A-4DC15A5E82DF}"/>
@@ -84,8 +60,16 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="EngineOutput" ID="{AEB66469-3A8E-45BB-A04F-AD050DCFAE35}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ShieldCollision" ID="{87656769-D5C1-4115-A5A5-B7E7F7378220}"/>
+							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="MusicVolume" ID="{253C1C84-7A82-4B1A-BD1C-A556C2777566}"/>
@@ -104,6 +88,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="ShieldRotate" ID="{E3630C9B-F8B3-4217-94C8-C45DD221F50B}"/>
+							<Value>7.33093419541692E-317</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="GlanceIntensity" ID="{04E7D6D2-07B0-4E06-87E9-9BD700D7C9D7}"/>
 							<Value>100</Value>
 						</RTPCValue>
@@ -114,6 +102,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="Doppler" ID="{8673EAE2-9CE8-4CA1-B679-511CF7A37873}"/>
 							<Value>7.33093419541692E-317</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ShieldStrength" ID="{47AF9AF1-2AE8-4634-B5B3-81E71BFC09EA}"/>
+							<Value>1</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

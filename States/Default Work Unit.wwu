@@ -10,6 +10,13 @@
 						<State Name="TopOn" ID="{A7ECA485-A8DF-4656-B38B-EEC407F42B52}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="ActiveView" ID="{42E0946C-5AFD-45D2-8CD1-AB00959197FE}">
+					<ChildrenList>
+						<State Name="None" ID="{1E0787B9-8216-4E0F-BCAE-2AB42ECBAFB7}"/>
+						<State Name="Command" ID="{099B64DC-BEE5-4C3D-B958-3BD7287F52F0}"/>
+						<State Name="Follow" ID="{F049A57A-D55F-40EE-938F-6EB3A178C865}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
