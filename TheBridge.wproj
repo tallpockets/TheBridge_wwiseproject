@@ -34,7 +34,7 @@
 						<Value Platform="iOS">256</Value>
 					</ValueList>
 				</Property>
-				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjI1NTEiIG1hc2s9IkVTQkkyNzUyIiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMSIgcGxhdGZvcm1zPSIzLDQsMTAiIGV4cGlyZXM9IjIwMTYtMDEtMzEiICAvPjxsaWNlbnNlIGlkPSIyMSIgbmFtZT0iTWFpbnRlbmFuY2UiIHR5cGU9IjEiICBleHBpcmVzPSIyMDE2LTAxLTMxIiAgLz48bGljZW5zZSBpZD0iMjIiIG5hbWU9IkxldmVsIEEgTGljZW5zZSIgdHlwZT0iMSIgcGxhdGZvcm1zPSIzLDEwIiBleHBpcmVzPSIyMDE2LTAxLTMxIiAgLz48bGljZW5zZSBpZD0iMjUiIG5hbWU9IkFsbCBXd2lzZSBQbHVnLUlucyIgdHlwZT0iMSIgIGV4cGlyZXM9IjIwMTYtMDEtMzEiICAvPjwvcHJvamVjdD4=|f1w290a9XPBYQwBKC0eOrc88LC3J3Hk2PYHlPPmmMz2nwADaE03ow4LgbMaA4v8hX/sqr8P3h7kNN4O3sIBBbwzP8nd16tnJtxS6Yrvqd1AbPy2mc2MM3stcCbajF2EyMCOBjGdPrDbMDfoTQOQjS/M6H1RFQXKslpQdDtcfV9tfJi3qEMIA1bCprkOLxC6u2ZsNn4LzFWOXy4ljYj/xKjzvK5WAMYpr6nNI8/Ug34TrCKyd3/u6l1RIab/mlOR5kATlPQSqZ/dfQnzmIcEqfxyrJBu4DZLg+PaeKrKI696hMbMWogWLK39vRj9vnZC+0bHikFRqGi+QIy+kyBXvVQ=="/>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjI3NjciIG1hc2s9IlhOR0wyODkxIiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMiIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVzPSIyMDE4LTA0LTMwIiAgLz48bGljZW5zZSBpZD0iMjEiIG5hbWU9Ik1haW50ZW5hbmNlIiB0eXBlPSIyIiBwbGF0Zm9ybXM9IjIsMyw0LDEwIiBleHBpcmVzPSIyMDE4LTA0LTMwIiAgLz48bGljZW5zZSBpZD0iMjIiIG5hbWU9IkxldmVsIEEgTGljZW5zZSIgdHlwZT0iMiIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVzPSIyMDE4LTA0LTMwIiAgLz48bGljZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjEiIHBsYXRmb3Jtcz0iMiwzIiBleHBpcmVzPSIyMDE2LTA2LTMwIiAgLz48L3Byb2plY3Q+|XrCMlPdppkXui4vGZAfGqQ4IUCkfNUJy6UJtIGlBtwjqNeAtjmacQw46r9vG6Di7TizNC7TxlG8BHTWvFHK2J0Or1lpaIU9WBwBjDG2lDlmBT88GB64C8gQXp8ijXtAZulsjhwDN+IIe8VwQ0XconMjK3qzUix6N2fv/e0aRJr4C1Wew+ENaK9p0XC1yKsxDzMiPTV1lixLJtMO5j01N+uOUXk66gg64oymG/K2lHeUNJIYVFqkRzgmvFtZtCqNTZ9Ig20BiR2aZoX+c73j5ySbzJZN4RbecaXbOQY3m6h/iG2Ugt8B9x0UEzu4VgE6nfIHEjO6EDL8dl7yzzvh5vQ=="/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\..\..\TheBridge-mark4\Assets\StreamingAssets\Audio\"/>
@@ -167,7 +167,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AstoundSound RTI Legacy" PluginType="3" CompanyID="260" PluginID="0">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="260" PluginID="0">
 					<PropertyList>
 						<Property Name="Apply attenuation" Type="bool">
 							<ValueList>
@@ -656,7 +656,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AstoundSound Expander" PluginType="3" CompanyID="260" PluginID="1">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="260" PluginID="1">
 					<PropertyList>
 						<Property Name="Enable expander" Type="bool">
 							<ValueList>
@@ -772,7 +772,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AstoundSound Folddown" PluginType="3" CompanyID="260" PluginID="2">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="260" PluginID="2">
 					<PropertyList>
 						<Property Name="Distance" Type="Real32">
 							<ValueList>
@@ -1088,7 +1088,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AstoundSound RTI" PluginType="6" CompanyID="260" PluginID="3">
+				<SharedPropertyList ClassName="" PluginType="6" CompanyID="260" PluginID="3">
 					<PropertyList>
 						<Property Name="Apply attenuation" Type="bool">
 							<ValueList>
@@ -1250,7 +1250,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AttachableMixerInput" PluginType="3" CompanyID="260" PluginID="4">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="260" PluginID="4">
 					<PropertyList>
 						<Property Name="Apply attenuation" Type="bool">
 							<ValueList>
@@ -9370,6 +9370,11 @@
 						<Property Name="Level" Type="Real32">
 							<ValueList>
 								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Reverb" Type="bool">
+							<ValueList>
+								<Value>True</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Reverb_alpha" Type="Real32">

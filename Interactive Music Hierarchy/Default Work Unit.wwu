@@ -13,7 +13,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{848E9EB2-1F4F-48CA-B4F6-D3FDD82986C9}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
@@ -120,7 +120,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{848E9EB2-1F4F-48CA-B4F6-D3FDD82986C9}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
@@ -269,6 +269,414 @@
 										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 									</PropertyList>
 									<SegmentRef Name="SpaceCommandTheme_Mix1" ID="{E0206F85-A551-41A9-AD08-2694D8683B5C}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+				<MusicPlaylistContainer Name="RickwoodHangar" ID="{4C5CE9C2-4A5E-4476-AFFB-C8BAE74EB202}" ShortID="902378439">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="VorbisHighQuality_Seekable" ID="{6642C573-3071-4E2A-90EE-22661132D0B1}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{848E9EB2-1F4F-48CA-B4F6-D3FDD82986C9}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="NYSU_ASC_Wondermental" ID="{1FBA7917-F44A-4EFF-ACBD-937A7CBB69C8}" ShortID="847316879">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="101053.242630385"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="NYSU_ASC_Wondermental" ID="{45A65506-2698-43A6-B6EA-601D6701B5D0}" ShortID="736910618">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="NYSU_ASC_Wondermental" ID="{597CC9AA-B6F4-4D56-8B0D-41BC67928C49}" ShortID="956023320">
+											<Language>SFX</Language>
+											<AudioFile>NYSU_ASC_Wondermental.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{BCC5E330-0E08-4FA3-8A5F-276C220910AA}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{45E47277-437F-4AFA-806B-CB5787499210}">
+											<ClipList>
+												<MusicClip Name="NYSU_ASC_Wondermental" ID="{31D4CE97-F784-4DED-8B1F-CE1E829AC892}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="101053.242630385"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="NYSU_ASC_Wondermental" ID="{597CC9AA-B6F4-4D56-8B0D-41BC67928C49}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{1C7F4BDD-23AE-4A2C-8DD8-ED671D5299CD}"/>
+								<MusicCue Name="Exit Cue" ID="{9D18DC6F-D03B-487E-9539-6DDFE302C5BE}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="101053.242630385"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="NYSU_ASC_Wondermental_v2" ID="{0F6FC5F2-989C-409F-82CC-5E54A4C5390F}" ShortID="608224733">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="130909.070294785"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="NYSU_ASC_Wondermental_v2" ID="{56554E68-68B3-46EC-8BD3-795CC11E684E}" ShortID="360177154">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="NYSU_ASC_Wondermental_v2" ID="{4122A578-D074-45E0-979A-6933638C7A18}" ShortID="239488123">
+											<Language>SFX</Language>
+											<AudioFile>NYSU_ASC_Wondermental_v2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{12F07E36-3E4D-4518-BB76-704703ECC724}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{66F0D3E3-2195-49FA-AA6E-64A1FB8DDC9E}">
+											<ClipList>
+												<MusicClip Name="NYSU_ASC_Wondermental_v2" ID="{B4206962-11DC-481B-8C5F-8F820AFC6252}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="130909.070294785"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="NYSU_ASC_Wondermental_v2" ID="{4122A578-D074-45E0-979A-6933638C7A18}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{853CA76F-18B6-4618-A538-65FA5F0EC83C}"/>
+								<MusicCue Name="Exit Cue" ID="{65BBFBF2-98FD-43B3-9094-00C227D75979}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="130909.070294785"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{F0C4EF7D-1964-43D0-AB2D-BB36CE8EFA61}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{D4FAA9B7-AA89-4ECE-95F3-C3E69C5638BF}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{F7DDA7E6-A033-47C6-999E-44EDDD4C84E0}" ShortID="806829599">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{0F47902F-C926-4913-A9B1-7E112F25BA1F}" ShortID="291081258">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="NYSU_ASC_Wondermental_v2" ID="{0F6FC5F2-989C-409F-82CC-5E54A4C5390F}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+				<MusicPlaylistContainer Name="RickWoodTheme" ID="{2CB5F231-1906-497F-AA23-8103EEC754C0}" ShortID="611944342">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="VorbisHighQuality_Seekable" ID="{6642C573-3071-4E2A-90EE-22661132D0B1}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{848E9EB2-1F4F-48CA-B4F6-D3FDD82986C9}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="NYSU_ASC_ThemeRemix_Begin" ID="{432D60EA-F60A-4B72-A55F-DF904F51D924}" ShortID="14420198">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="97874.6712018141"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="NYSU_ASC_ThemeRemix_Begin" ID="{963CA998-D145-4402-9C15-1EFE3EBD3FB4}" ShortID="223033879">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="NYSU_ASC_ThemeRemix_Begin" ID="{17FCB177-0644-4E97-849C-7A86A39ADA5C}" ShortID="354166912">
+											<Language>SFX</Language>
+											<AudioFile>NYSU_ASC_ThemeRemix_Begin.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{97E5B0E8-ED9D-4FA8-AFF4-6795A73E45B3}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{C8C4C515-2EFB-4D67-9803-F3C8940B42CB}">
+											<ClipList>
+												<MusicClip Name="NYSU_ASC_ThemeRemix_Begin" ID="{0B08DA41-3911-42C3-9B58-9279FE1AB278}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="97874.6712018141"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="NYSU_ASC_ThemeRemix_Begin" ID="{17FCB177-0644-4E97-849C-7A86A39ADA5C}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{8A96AC42-7C52-464E-9A0D-4BBFFED9D81C}"/>
+								<MusicCue Name="Exit Cue" ID="{0EE18BC0-C748-4CA0-BE52-B298A934460D}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="97874.6712018141"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="NYSU_ASC_ThemeRemix_Loop" ID="{97CA4443-DFE3-46E6-AF60-E2D0457ACB48}" ShortID="275391428">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="97874.6712018141"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="NYSU_ASC_ThemeRemix_Loop" ID="{9D2101D1-E243-47B1-86EF-7EB0DA9147A7}" ShortID="692948448">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="NYSU_ASC_ThemeRemix_Loop" ID="{C263DE2D-AA51-4025-ACE0-3EC82A68C554}" ShortID="977507693">
+											<Language>SFX</Language>
+											<AudioFile>NYSU_ASC_ThemeRemix_Loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{230B7DB4-2043-4E14-8A72-F3F71210046A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{5819645F-8FB2-49CD-BB0F-BD26EA71BA88}">
+											<ClipList>
+												<MusicClip Name="NYSU_ASC_ThemeRemix_Loop" ID="{1AD8B862-9D29-45B1-ABBD-702EF5A0D156}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="97874.6712018141"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="NYSU_ASC_ThemeRemix_Loop" ID="{C263DE2D-AA51-4025-ACE0-3EC82A68C554}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{C8FE4F1E-BDC6-46E0-B553-B6A1EE7EF959}"/>
+								<MusicCue Name="Exit Cue" ID="{A99092C8-E5AA-4A1E-9E21-6A69919CC4CB}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="97874.6712018141"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="NYSU_ASC_ThemeRemix_v2" ID="{7B70B94A-9560-4923-A150-750A88CE1784}" ShortID="575802186">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="115990.657596372"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F679B7B-95A5-4538-8A66-0A011D4A2FC7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="NYSU_ASC_ThemeRemix_v2" ID="{61423DD2-25BE-452E-9538-C4A435EAC832}" ShortID="17504811">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="NYSU_ASC_ThemeRemix_v2" ID="{51DDB88C-79F6-4CCF-B780-E35A7B4CFB80}" ShortID="156086495">
+											<Language>SFX</Language>
+											<AudioFile>NYSU_ASC_ThemeRemix_v2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{6C13106F-21D9-47F7-80BD-C055BC4580F2}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{9F14DB62-A08F-4C1B-943E-82F10C0E9C67}">
+											<ClipList>
+												<MusicClip Name="NYSU_ASC_ThemeRemix_v2" ID="{A5830988-9E04-4B57-9FB5-4DA668A35452}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="115990.657596372"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="NYSU_ASC_ThemeRemix_v2" ID="{51DDB88C-79F6-4CCF-B780-E35A7B4CFB80}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="New Music Track" ID="{A76BC4D9-4903-45B3-8FA6-0DEB7C3DE2A0}" ShortID="738518120">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9404C3CA-10BA-4085-BC5F-E6E1F493F626}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{26BB9EBE-10B8-4ADC-8A4A-09117A2AD0B7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{7C6C50AE-FEBD-4CCC-BED4-80825F791887}"/>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{C1252042-D5EB-434C-95F8-2DE9F9E7029D}"/>
+								<MusicCue Name="Exit Cue" ID="{8F4369D8-5268-40C3-9E77-1A6BDEE1C0DD}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="115990.657596372"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{A5810D97-576F-45F9-88B2-BA06D7859D27}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{D1EEC32B-0AD3-490F-9272-23390A43C80F}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{E73AE181-3567-4C05-8118-30E34717BEA7}" ShortID="752545394">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{E7759B62-1A67-44BF-897A-0F2EB6F7CA80}" ShortID="36209224">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="NYSU_ASC_ThemeRemix_v2" ID="{7B70B94A-9560-4923-A150-750A88CE1784}"/>
 								</MusicPlaylistItem>
 							</ChildrenList>
 						</MusicPlaylistItem>

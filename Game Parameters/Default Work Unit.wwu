@@ -35,16 +35,23 @@
 				</GameParameter>
 				<GameParameter Name="ShipPitch" ID="{44720D2B-08FA-4351-934D-68140C99A95C}">
 					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="4"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="4"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1.5"/>
 						<Property Name="Min" Type="Real64" Value="-1.5"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="ShipYaw" ID="{11D5C78A-6AAE-4CF4-9B0A-8A767298E8FE}">
 					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="4"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="4"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="1.5"/>
 						<Property Name="Min" Type="Real64" Value="-1.5"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="6"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="ReactorPowerPercentage" ID="{A59CD535-1DF3-43A4-B41A-4DC15A5E82DF}">
@@ -91,9 +98,14 @@
 				</Folder>
 				<GameParameter Name="Doppler" ID="{8673EAE2-9CE8-4CA1-B679-511CF7A37873}">
 					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="10"/>
-						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="30"/>
+						<Property Name="Min" Type="Real64" Value="-30"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="66"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="65"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}">
@@ -121,6 +133,29 @@
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="1"/>
 						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ComponentMass" ID="{9A271212-C8CC-4B5E-8329-2F761FF76E2E}"/>
+				<GameParameter Name="NumberOfRockets" ID="{0092CADC-DE96-45A8-A842-6F44E5B5A270}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="20"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ObjectToListenerAngle" ID="{C0B80148-21DF-47C8-A152-88F61CB66C2D}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="4"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="AISpeed" ID="{1DC1EDE2-9AB3-4B79-8D7D-E20509BA5995}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

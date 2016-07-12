@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{BAF849B8-8207-43E6-B037-A712B2BDA653}" PersistMode="Standalone">
 			<ChildrenList>
 				<StateGroup Name="CommandView" ID="{4D949B39-59C6-468D-9D3E-D1C2BBA503B7}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{0F77CCE5-9693-49EA-8FF3-53BB409847ED}"/>
 						<State Name="TopOff" ID="{16BACC56-3EEB-42B8-BA91-60D071B23071}"/>
@@ -11,10 +14,27 @@
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="ActiveView" ID="{42E0946C-5AFD-45D2-8CD1-AB00959197FE}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{1E0787B9-8216-4E0F-BCAE-2AB42ECBAFB7}"/>
 						<State Name="Command" ID="{099B64DC-BEE5-4C3D-B958-3BD7287F52F0}"/>
 						<State Name="Follow" ID="{F049A57A-D55F-40EE-938F-6EB3A178C865}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GameStarted" ID="{66FC496A-8455-4DBA-9B03-44630E555262}">
+					<ChildrenList>
+						<State Name="None" ID="{FDE71CA3-F423-4E85-98C3-B05C88415E17}"/>
+						<State Name="False" ID="{B25DE69C-FAB2-47E9-B3FF-6566DAA5B755}"/>
+						<State Name="True" ID="{C6851CC2-13AF-4A53-BB64-EFD91F1E051F}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="isLoadScreen" ID="{26EBB02D-DB5E-4075-8A94-6F4600A1D7B9}">
+					<ChildrenList>
+						<State Name="None" ID="{04E78764-EBA2-4AFF-BB6B-76855470402B}"/>
+						<State Name="True" ID="{BEC17852-EA52-4C70-BC26-BEEB2E345E1A}"/>
+						<State Name="False" ID="{AAEC0100-7DA3-4479-84C0-DD7634D4E224}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
