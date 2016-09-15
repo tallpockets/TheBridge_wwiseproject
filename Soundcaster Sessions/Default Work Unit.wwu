@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{3332F026-A117-4838-A039-F21ECAB0D8CC}" SchemaVersion="70">
+<WwiseDocument Type="WorkUnit" ID="{3332F026-A117-4838-A039-F21ECAB0D8CC}" SchemaVersion="72">
 	<SoundcasterSessions>
 		<WorkUnit Name="Default Work Unit" ID="{3332F026-A117-4838-A039-F21ECAB0D8CC}" PersistMode="Standalone">
 			<ChildrenList>
@@ -36,20 +36,20 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="SfxVolume" ID="{09CCF50C-6E7B-4545-94BF-572FBDCD8B79}"/>
-							<Value>100</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="ComponentMass" ID="{9A271212-C8CC-4B5E-8329-2F761FF76E2E}"/>
-							<Value>22</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="AmountLookingAtSun" ID="{1236491F-465D-466A-A3EE-D578C00B7419}"/>
-							<Value>1</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="Distance" ID="{EA36E923-5212-40A7-B769-BE370945500B}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ShieldCollision" ID="{87656769-D5C1-4115-A5A5-B7E7F7378220}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ShieldRotate" ID="{E3630C9B-F8B3-4217-94C8-C45DD221F50B}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}"/>
+							<Value>0.87</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ShipPitch" ID="{44720D2B-08FA-4351-934D-68140C99A95C}"/>
@@ -60,47 +60,7 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="ObjectToListenerAngle" ID="{C0B80148-21DF-47C8-A152-88F61CB66C2D}"/>
-							<Value>7.33577999127133E-317</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="MasterVolume" ID="{F855F550-B15E-4FEE-983A-C2C42E90C4CB}"/>
-							<Value>100</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}"/>
-							<Value>0.87</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="EngineOutput" ID="{AEB66469-3A8E-45BB-A04F-AD050DCFAE35}"/>
-							<Value>0.998403867987316</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="ShieldCollision" ID="{87656769-D5C1-4115-A5A5-B7E7F7378220}"/>
-							<Value>50</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="MusicVolume" ID="{253C1C84-7A82-4B1A-BD1C-A556C2777566}"/>
-							<Value>100</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="ShipYaw" ID="{11D5C78A-6AAE-4CF4-9B0A-8A767298E8FE}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="SpeakerMode" ID="{572FA48B-9020-4A8F-9B1D-98AA1F0AA1FB}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="ExplosiveIntensity" ID="{4FC4DF8D-CCE4-494C-A111-8C7C628CEA7E}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="ShieldRotate" ID="{E3630C9B-F8B3-4217-94C8-C45DD221F50B}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="GlanceIntensity" ID="{04E7D6D2-07B0-4E06-87E9-9BD700D7C9D7}"/>
+							<GameParameterRef Name="SfxVolume" ID="{09CCF50C-6E7B-4545-94BF-572FBDCD8B79}"/>
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
@@ -108,26 +68,66 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="ThrustPower" ID="{ABD376DF-0518-4B72-A94C-F1E41961EBB7}"/>
-							<Value>99.8861047835991</Value>
+							<GameParameterRef Name="EngineOutput" ID="{AEB66469-3A8E-45BB-A04F-AD050DCFAE35}"/>
+							<Value>0.998403867987316</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Doppler" ID="{8673EAE2-9CE8-4CA1-B679-511CF7A37873}"/>
-							<Value>-18.5217391304348</Value>
+							<GameParameterRef Name="ShieldStrength" ID="{47AF9AF1-2AE8-4634-B5B3-81E71BFC09EA}"/>
+							<Value>0.12</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="AmountLookingAtSun" ID="{1236491F-465D-466A-A3EE-D578C00B7419}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ObjectToListenerAngle" ID="{C0B80148-21DF-47C8-A152-88F61CB66C2D}"/>
+							<Value>7.33577999127133E-317</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ExplosiveIntensity" ID="{4FC4DF8D-CCE4-494C-A111-8C7C628CEA7E}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SpeakerMode" ID="{572FA48B-9020-4A8F-9B1D-98AA1F0AA1FB}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{253C1C84-7A82-4B1A-BD1C-A556C2777566}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ComponentMass" ID="{9A271212-C8CC-4B5E-8329-2F761FF76E2E}"/>
+							<Value>22</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ThrustPower" ID="{ABD376DF-0518-4B72-A94C-F1E41961EBB7}"/>
+							<Value>99.8861047835991</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="AISpeed" ID="{1DC1EDE2-9AB3-4B79-8D7D-E20509BA5995}"/>
 							<Value>0.0236024844720497</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="ShieldStrength" ID="{47AF9AF1-2AE8-4634-B5B3-81E71BFC09EA}"/>
-							<Value>0.12</Value>
+							<GameParameterRef Name="Doppler" ID="{8673EAE2-9CE8-4CA1-B679-511CF7A37873}"/>
+							<Value>-18.5217391304348</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ShipYaw" ID="{11D5C78A-6AAE-4CF4-9B0A-8A767298E8FE}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="GlanceIntensity" ID="{04E7D6D2-07B0-4E06-87E9-9BD700D7C9D7}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MasterVolume" ID="{F855F550-B15E-4FEE-983A-C2C42E90C4CB}"/>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Follow" ID="{F049A57A-D55F-40EE-938F-6EB3A178C865}"/>
 						<CurrentStateRef Name="TopOn" ID="{A7ECA485-A8DF-4656-B38B-EEC407F42B52}"/>
 						<CurrentStateRef Name="True" ID="{C6851CC2-13AF-4A53-BB64-EFD91F1E051F}"/>
-						<CurrentStateRef Name="Follow" ID="{F049A57A-D55F-40EE-938F-6EB3A178C865}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{4F2FAAE5-0524-4D46-AB85-C216612A4C51}" SchemaVersion="70">
+<WwiseDocument Type="WorkUnit" ID="{4F2FAAE5-0524-4D46-AB85-C216612A4C51}" SchemaVersion="72">
 	<Effects>
 		<WorkUnit Name="Default Work Unit" ID="{4F2FAAE5-0524-4D46-AB85-C216612A4C51}" PersistMode="Standalone">
 			<ChildrenList>
 				<Effect Name="New_Wwise_Convolution_Reverb" ID="{DC20CFD8-C4D8-427D-B7F4-ECC6644294B3}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 					<PropertyList>
-						<Property Name="DryLevel" Type="Real32" Value="-96.3"/>
-						<Property Name="IRConvolutionStop" Type="Real64" Value="0.0205668934240363"/>
-						<Property Name="WetLevel" Type="Real32" Value="1"/>
+						<Property Name="DryLevel" Type="Real32">
+							<ValueList>
+								<Value>-96.3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="IRConvolutionStop" Type="Real64">
+							<ValueList>
+								<Value>0.0205668934240363</Value>
+							</ValueList>
+						</Property>
+						<Property Name="WetLevel" Type="Real32">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ChildrenList>
 						<PluginMediaSource Name="iPhone_ir_Recording" ID="{84909FA5-A543-402C-926B-3808A32E3760}" ShortID="167900416">
@@ -17,8 +29,7 @@
 							</PropertyList>
 						</PluginMediaSource>
 					</ChildrenList>
-					<PluginData>
-	<ConvolutionData>
+					<PluginData><ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{51C0F64B-577D-4021-84AE-3192AF00B03A}">
@@ -78,8 +89,7 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData>
-</PluginData>
+	</ConvolutionData></PluginData>
 				</Effect>
 			</ChildrenList>
 		</WorkUnit>

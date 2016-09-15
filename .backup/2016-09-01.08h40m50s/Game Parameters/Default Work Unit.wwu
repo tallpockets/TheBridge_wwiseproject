@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}" SchemaVersion="70">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{6966DBA8-756D-44BD-86CE-0978DD104ECB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Settings" ID="{4053704C-4393-44DD-A5DB-CAC57E43B9A1}" ShortID="615712274">
+					<ChildrenList>
+						<GameParameter Name="MasterVolume" ID="{F855F550-B15E-4FEE-983A-C2C42E90C4CB}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="MusicVolume" ID="{253C1C84-7A82-4B1A-BD1C-A556C2777566}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SfxVolume" ID="{09CCF50C-6E7B-4545-94BF-572FBDCD8B79}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="SpeakerMode" ID="{572FA48B-9020-4A8F-9B1D-98AA1F0AA1FB}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+								<Property Name="Max" Type="Real64" Value="4"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<GameParameter Name="ThrustPower" ID="{ABD376DF-0518-4B72-A94C-F1E41961EBB7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ShipPitch" ID="{44720D2B-08FA-4351-934D-68140C99A95C}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="4"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="4"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1.5"/>
+						<Property Name="Min" Type="Real64" Value="-1.5"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ShipYaw" ID="{11D5C78A-6AAE-4CF4-9B0A-8A767298E8FE}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="4"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="4"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1.5"/>
+						<Property Name="Min" Type="Real64" Value="-1.5"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="6"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ReactorPowerPercentage" ID="{A59CD535-1DF3-43A4-B41A-4DC15A5E82DF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="76"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="75"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="EngineOutput" ID="{AEB66469-3A8E-45BB-A04F-AD050DCFAE35}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="AmountLookingAtSun" ID="{1236491F-465D-466A-A3EE-D578C00B7419}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Distance" ID="{EA36E923-5212-40A7-B769-BE370945500B}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="5000"/>
+					</PropertyList>
+				</GameParameter>
+				<Folder Name="Collision" ID="{C34ECDD7-F371-4C39-AFF8-1CEBB4A20FD1}" ShortID="1045252638">
+					<ChildrenList>
+						<GameParameter Name="GlanceIntensity" ID="{04E7D6D2-07B0-4E06-87E9-9BD700D7C9D7}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="ExplosiveIntensity" ID="{4FC4DF8D-CCE4-494C-A111-8C7C628CEA7E}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<GameParameter Name="Doppler" ID="{8673EAE2-9CE8-4CA1-B679-511CF7A37873}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="30"/>
+						<Property Name="Min" Type="Real64" Value="-30"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="66"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="65"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ShieldPower" ID="{52D35462-D4FF-42C4-AB7D-2BFE9589F871}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="2"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ShieldCollision" ID="{87656769-D5C1-4115-A5A5-B7E7F7378220}"/>
+				<GameParameter Name="ShieldRotate" ID="{E3630C9B-F8B3-4217-94C8-C45DD221F50B}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.7"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="25"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="10"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ShieldStrength" ID="{47AF9AF1-2AE8-4634-B5B3-81E71BFC09EA}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ComponentMass" ID="{9A271212-C8CC-4B5E-8329-2F761FF76E2E}"/>
+				<GameParameter Name="NumberOfRockets" ID="{0092CADC-DE96-45A8-A842-6F44E5B5A270}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="20"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ObjectToListenerAngle" ID="{C0B80148-21DF-47C8-A152-88F61CB66C2D}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="4"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="AISpeed" ID="{1DC1EDE2-9AB3-4B79-8D7D-E20509BA5995}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

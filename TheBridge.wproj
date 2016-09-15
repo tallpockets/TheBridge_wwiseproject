@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="70">
+<WwiseDocument Type="Project" SchemaVersion="72" WwiseVersion="v2016.1.2" WwiseBuild="5863">
 	<ProjectInfo>
 		<Project Name="TheBridge" ID="{9BDC2956-0E78-469F-8DD2-481CC46DA6E8}">
 			<Platforms>
 				<Platform Name="Android" ReferencePlatform="Android" ID="{179928A8-3B77-4DC1-AEAB-66308D6A9568}"/>
 				<Platform Name="iOS" ReferencePlatform="iOS" ID="{4006B9EB-A946-4A18-8119-40E59330F88D}"/>
+				<Platform Name="Linux" ReferencePlatform="Linux" ID="{740563F3-C3C8-4652-A2C5-08C07B6B9A67}"/>
 				<Platform Name="Mac" ReferencePlatform="Mac" ID="{3B7F2C22-2924-473D-A5EB-5DFA8D8B0F35}"/>
 				<Platform Name="Windows" ReferencePlatform="Windows" ID="{04CCF948-6413-4B19-8284-86027A6BF2FE}"/>
 			</Platforms>
@@ -12,78 +13,87 @@
 				<Property Name="DefaultLanguage" Type="int32" Value="12"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
+						<Value Platform="Linux"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="iOS"></Value>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Android"></Value>
-						<Value Platform="iOS"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
+						<Value Platform="Linux">GeneratedSoundBanks\Linux\</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
+						<Value Platform="iOS">GeneratedSoundBanks\iOS\</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
-						<Value Platform="iOS">GeneratedSoundBanks\iOS\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
 					<ValueList>
+						<Value Platform="Linux">256</Value>
 						<Value Platform="Mac">256</Value>
+						<Value Platform="iOS">256</Value>
 						<Value Platform="Windows">256</Value>
 						<Value Platform="Android">256</Value>
-						<Value Platform="iOS">256</Value>
 					</ValueList>
 				</Property>
-				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjI3NjciIG1hc2s9IlhOR0wyODkxIiBlbmM9IjAiPjxsaWNlbnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMiIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVzPSIyMDE4LTA0LTMwIiAgLz48bGljZW5zZSBpZD0iMjEiIG5hbWU9Ik1haW50ZW5hbmNlIiB0eXBlPSIyIiBwbGF0Zm9ybXM9IjIsMyw0LDEwIiBleHBpcmVzPSIyMDE4LTA0LTMwIiAgLz48bGljZW5zZSBpZD0iMjIiIG5hbWU9IkxldmVsIEEgTGljZW5zZSIgdHlwZT0iMiIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVzPSIyMDE4LTA0LTMwIiAgLz48bGljZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjEiIHBsYXRmb3Jtcz0iMiwzIiBleHBpcmVzPSIyMDE2LTA2LTMwIiAgLz48L3Byb2plY3Q+|XrCMlPdppkXui4vGZAfGqQ4IUCkfNUJy6UJtIGlBtwjqNeAtjmacQw46r9vG6Di7TizNC7TxlG8BHTWvFHK2J0Or1lpaIU9WBwBjDG2lDlmBT88GB64C8gQXp8ijXtAZulsjhwDN+IIe8VwQ0XconMjK3qzUix6N2fv/e0aRJr4C1Wew+ENaK9p0XC1yKsxDzMiPTV1lixLJtMO5j01N+uOUXk66gg64oymG/K2lHeUNJIYVFqkRzgmvFtZtCqNTZ9Ig20BiR2aZoX+c73j5ySbzJZN4RbecaXbOQY3m6h/iG2Ugt8B9x0UEzu4VgE6nfIHEjO6EDL8dl7yzzvh5vQ=="/>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjI3NjciIG1hc2s9IlhOR0wyODkxIiBlbmM9IjAiPjxsaWNl bnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMiIgcGxhdGZvcm1zPSI0LDEw IiBleHBpcmVzPSIyMDE4LTA0LTMwIiAgLz48bGljZW5zZSBpZD0iMjEiIG5hbWU9 Ik1haW50ZW5hbmNlIiB0eXBlPSIyIiBwbGF0Zm9ybXM9IjIsMyw0LDEwLDE0IiBl eHBpcmVzPSIyMDE4LTA0LTMwIiAgLz48bGljZW5zZSBpZD0iMjIiIG5hbWU9Ikxl dmVsIEEgTGljZW5zZSIgdHlwZT0iMiIgcGxhdGZvcm1zPSI0LDEwIiBleHBpcmVz PSIyMDE4LTA0LTMwIiAgLz48bGljZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5 cGU9IjEiIHBsYXRmb3Jtcz0iMiwzIiBleHBpcmVzPSIyMDE2LTA2LTMwIiAgLz48 bGljZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjEiIHBsYXRmb3Jtcz0i MTQiIGV4cGlyZXM9IjIwMTYtMTAtMzEiICAvPjwvcHJvamVjdD4=|xFlgfbKI0iE zAfkB+YcF/7NO7awaER29lHZYSklOTvA9O5zWYyqRIjIoCDb7VsTwyFqXYZVqzI1 IMhlEghR93OX2nJn610NcmHGF2lhVmyST18YiMtJdyHALeoryTz4YrJCkbVeioUV n9bLav4We/q2HrZPPHWnPueQTz7jzihyZshhxTHcoRxraYVS4QYZ3auhMkCmxUB9 JVeXUBOGwCgLm3XWSA2UHDSlG9e4YIFoNRB2xCeoOP1jVW7ORlg5aMHxrc3dDLJr IddzMZmbcIupsoO/XhczxVqiUSJK54lndJfIXdsEi8R8yPf+pM9cQsMwwfcAyiqz C6wIqtma7CA== "/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\..\..\TheBridge-mark4\Assets\StreamingAssets\Audio\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
+						<Value Platform="Linux">..\..\..\TheBridge-mark4\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Linux\</Value>
 						<Value Platform="Mac">..\..\..\TheBridge-mark4\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</Value>
+						<Value Platform="iOS">..\..\..\TheBridge-mark4\Assets\StreamingAssets\Audio\GeneratedSoundBanks\iOS\</Value>
 						<Value Platform="Windows">..\..\..\TheBridge-mark4\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="Android">..\..\..\TheBridge-mark4\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Android\</Value>
-						<Value Platform="iOS">..\..\..\TheBridge-mark4\Assets\StreamingAssets\Audio\GeneratedSoundBanks\iOS\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
 					<ValueList>
+						<Value Platform="Linux">Copy Streamed Files</Value>
 						<Value Platform="Mac">Copy Streamed Files</Value>
+						<Value Platform="iOS">Copy Streamed Files</Value>
 						<Value Platform="Windows">Copy Streamed Files</Value>
 						<Value Platform="Android">Copy Streamed Files</Value>
-						<Value Platform="iOS">Copy Streamed Files</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
 					<ValueList>
+						<Value Platform="Linux">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Mac">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
+						<Value Platform="iOS">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Windows">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Android">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
-						<Value Platform="iOS">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
 					<ValueList>
+						<Value Platform="Linux"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="iOS"></Value>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Android"></Value>
-						<Value Platform="iOS"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
 					<ValueList>
+						<Value Platform="Linux"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="iOS"></Value>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Android"></Value>
-						<Value Platform="iOS"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="VolumeThreshold" Type="Real64">
 					<ValueList>
+						<Value Platform="Linux">-80</Value>
 						<Value Platform="Mac">-80</Value>
+						<Value Platform="iOS">-80</Value>
 						<Value Platform="Windows">-80</Value>
 						<Value Platform="Android">-80</Value>
-						<Value Platform="iOS">-80</Value>
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2015.1|Build=5457|VersionName=v2015.1.2|Config=Release"/>
@@ -1196,6 +1206,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
+				<SharedPropertyList ClassName="Event" PluginType="0" CompanyID="1" PluginID="4"/>
 				<SharedPropertyList ClassName="iZotope Trash Delay" PluginType="3" CompanyID="259" PluginID="4">
 					<PropertyList>
 						<Property Name="DelayType" Type="int32">
@@ -1510,6 +1521,11 @@
 							</ValueList>
 						</Property>
 						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MakeUpGain" Type="Real64">
 							<ValueList>
 								<Value>0</Value>
 							</ValueList>
@@ -3217,6 +3233,11 @@
 						<Property Name="PanY" Type="Real64">
 							<ValueList>
 								<Value>35</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PanZ" Type="Real64">
+							<ValueList>
+								<Value>0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="PlayMechanismLoop" Type="bool">
@@ -8439,7 +8460,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Wwise Convolution Reverb" PluginType="3" CompanyID="0" PluginID="127">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="0" PluginID="127">
 					<PropertyList>
 						<Property Name="AlgoTypeSelect" Type="int32">
 							<ValueList>
@@ -8595,6 +8616,11 @@
 				</SharedPropertyList>
 				<SharedPropertyList ClassName="Wwise Meter" PluginType="3" CompanyID="0" PluginID="129">
 					<PropertyList>
+						<Property Name="ApplyDownstreamVolume" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="AttackTime" Type="Real32">
 							<ValueList>
 								<Value>0</Value>
@@ -8706,6 +8732,60 @@
 						<Property Name="ProcessLFE" Type="bool">
 							<ValueList>
 								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
+				<SharedPropertyList ClassName="Wwise Recorder" PluginType="3" CompanyID="0" PluginID="132">
+					<PropertyList>
+						<Property Name="ApplyDownstreamVolume" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="AuthoringFilename" Type="string">
+							<ValueList>
+								<Value>Recorder.wav</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Center" Type="Real32">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="DownmixToStereo" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Format" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Front" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="GameFilename" Type="string">
+							<ValueList>
+								<Value></Value>
+							</ValueList>
+						</Property>
+						<Property Name="LFE" Type="Real32">
+							<ValueList>
+								<Value>-96.3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Rear" Type="Real32">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Surround" Type="Real32">
+							<ValueList>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -9079,7 +9159,7 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Wwise MP3 Input" PluginType="2" CompanyID="0" PluginID="201">
+				<SharedPropertyList ClassName="" PluginType="2" CompanyID="0" PluginID="201">
 					<PropertyList>
 						<Property Name="Token" Type="int32">
 							<ValueList>
@@ -9689,6 +9769,9 @@
 				</PhysicalFolder>
 				<PhysicalFolder Path="Attenuations">
 					<WorkUnit Name="Attenuations" ID="{017BDDA0-1BB1-4CE1-8077-79594EC4585C}" PersistMode="Standalone"/>
+				</PhysicalFolder>
+				<PhysicalFolder Path="Audio Devices">
+					<WorkUnit Name="Audio Devices" ID="{27092F88-225A-1154-6725-C8A34F3D4482}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Control Surface Sessions">
 					<WorkUnit Name="Control Surface Sessions" ID="{1751E4CD-8018-4E2C-9A8A-C77764D1D653}" PersistMode="Standalone"/>
